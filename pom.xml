@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>com.google.code.maven-play-plugin</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.0-alpha2-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>test-projects</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Play! Framework Maven Test Projects</name>
+
+    <repositories>
+        <repository>
+            <id>com.google.code.maven-play-plugin</id>
+            <name>Maven Play Plugin - releases</name>
+            <url>https://maven-play-plugin.googlecode.com/svn/mavenrepo/releases</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>com.google.code.maven-play-plugin-snapshots</id>
+            <name>Maven Play Plugin - snapshots</name>
+            <url>https://maven-play-plugin.googlecode.com/svn/mavenrepo/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <modules>
+        <module>findbugs</module>
+        <module>selenium</module>
+        <module>surefire</module>
+        <module>surefire-with-failures</module>
+    </modules>
+
+</project>
