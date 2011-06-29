@@ -1,0 +1,17 @@
+*{ You can use plain selenium command using the selenium tag }*
+
+#{selenium}
+    // Open the home page, and check that no error occured
+    open('/')
+    verifyNotValue('id=multiline','a<br/>b<br/>c')
+    verifyValue('id=multiline','a<br/>b<br/><br/>c')
+    verifyValue('id=multiline','a<BR />b<br/><br/>c')
+    verifyValue('id=multiline','<br/>a<BR />b<br/><br/>c<br />')
+    verifyValue('id=multiline','<br/><br/><br/><br/>a<BR />b<br/><br/>c<br /><br/><br/><br/><br/>')
+    verifyNotText('id=multiline','a bc')
+    verifyText('id=multiline','a b c')
+    verifyText('id=multiline','a b  c')
+    verifyText('id=multiline','a b                        c')
+    verifyText('id=multiline','a      b                        c')
+    verifyText('id=multiline',' a b c ')
+#{/selenium}

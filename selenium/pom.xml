@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>com.google.code.maven-play-plugin</groupId>
+        <artifactId>play-app-default-parent</artifactId>
+        <version>1.0.0-alpha2-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>test</groupId>
+    <artifactId>test-projects-selenium</artifactId>
+    <packaging>play</packaging>
+
+    <repositories>
+        <repository>
+            <id>com.google.code.maven-play-plugin</id>
+            <name>Maven Play Plugin - releases</name>
+            <url>http://maven-play-plugin.googlecode.com/svn/mavenrepo/releases</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>com.google.code.maven-play-plugin-snapshots</id>
+            <name>Maven Play Plugin - snapshots</name>
+            <url>http://maven-play-plugin.googlecode.com/svn/mavenrepo/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <properties>
+        <play.version>1.1-SNAPSHOT</play.version>
+        <play.test.profile>test</play.test.profile>
+        <selenium.browser>*chrome</selenium.browser> <!-- to jest chyba default -->
+        <selenium.url>http://localhost:9000</selenium.url> <!-- to jest default -->
+    </properties>
+
+    <dependencies>
+
+        <!-- Play! framework dependencies -->
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
+            <artifactId>play</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
+            <artifactId>play-testrunner</artifactId>
+            <version>${play.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- for Selenium tests only -->
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin</groupId>
+            <artifactId>play-selenium-junit4</artifactId>
+            <version>1.0.0-alpha2-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.google.code.maven-play-plugin</groupId>
+                <artifactId>maven-play-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <configuration>
+                    <includes>
+<!--                        <include>**/*SeleniumTest.java</include>-->
+                        <include>MultiLineSeleniumTest.java</include>
+                        <include>MultiLineWithVariablesSeleniumTest.java</include>
+<!--                        <include>ApplicationSeleniumTest.java</include>-->
+<!--                        <include>AssertEqualsSeleniumTest.java</include>-->
+<!--                        <include>VerifyTrueSeleniumTest.java</include>-->
+                    </includes>
+                    <skip>${play.skipSeleniumTests}</skip>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>2.3</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <linkJavadoc>false</linkJavadoc>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.9</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>report-only</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+                <configuration>
+                    <outputName>failsafe-report</outputName>
+                    <reportsDirectories>
+                        <reportsDirectory>${project.build.directory}/failsafe-reports</reportsDirectory>
+                    </reportsDirectories>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>

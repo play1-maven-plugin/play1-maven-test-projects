@@ -1,0 +1,10 @@
+*{ You can use plain selenium command using the selenium tag }*
+
+#{selenium}
+    // Open the home page, and check that no error occured
+    open('/')
+    storeExpression('a<br/>b','a_br_b')
+    echo('.$[a_br_b].')
+    echo('.$[space].$[nbsp].')
+    verifyValue('id=multiline','$[a_br_b]<br/><br/>c')
+#{/selenium}
