@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
         <groupId>com.google.code.maven-play-plugin</groupId>
         <artifactId>play-app-default-parent</artifactId>
-        <version>1.0.0-alpha2-SNAPSHOT</version>
+        <version>1.0.0-alpha3-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>test</groupId>
-    <artifactId>test-projects-surefire-with-failures</artifactId>
+    <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
+    <artifactId>surefire-with-failures</artifactId>
     <packaging>play</packaging>
+
+    <name>Play! Framework Maven Test Projects : Unit and Functional Tests with failures</name>
 
     <repositories>
         <repository>
@@ -32,8 +54,8 @@
     </repositories>
 
     <properties>
-        <play.version>1.1-SNAPSHOT</play.version>
-        <play.selenium.skip>true</play.selenium.skip>
+        <play.version>1.1</play.version>
+        <play.seleniumSkip>true</play.seleniumSkip>
     </properties>
 
     <dependencies>
@@ -43,27 +65,14 @@
             <version>${play.version}</version>
             <scope>provided</scope>
         </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>com.google.code.maven-play-plugin</groupId>
-                <artifactId>maven-play-plugin</artifactId>
-                <version>1.0.0-alpha2-SNAPSHOT</version>
+                <artifactId>play-maven-plugin</artifactId>
                 <extensions>true</extensions>
-                <!-- for jxr report only -->
-                <configuration>
-                    <compileApp>true</compileApp>
-                    <compileTest>true</compileTest>
-                </configuration>
             </plugin>
 
             <plugin>
