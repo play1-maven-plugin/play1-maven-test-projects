@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Application extends Controller {
 
-int i;
+    int foo;
 
     public static void index() {
         render();
