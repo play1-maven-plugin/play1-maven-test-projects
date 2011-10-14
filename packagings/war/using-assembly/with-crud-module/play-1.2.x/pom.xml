@@ -28,11 +28,11 @@ under the License.
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.test-projects.packagings.uberzip.using-assembly</groupId>
-    <artifactId>no-dependencies</artifactId>
+    <groupId>com.google.code.maven-play-plugin.test-projects.packagings.war.using-assembly.with-crud-module</groupId>
+    <artifactId>play-1_2_x</artifactId>
     <packaging>play</packaging>
 
-    <name>Play! Framework Maven Test Projects : Packagings : UberZip : Using Assembly : No Dependencies</name>
+    <name>Play! Framework Maven Test Projects : Packagings : WAR : Using Assembly : With CRUD Module : Play! 1.2.x</name>
 
     <repositories>
         <repository>
@@ -54,7 +54,7 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.1</play.version>
+        <play.version>1.2.3</play.version>
         <play.seleniumSkip>true</play.seleniumSkip>
     </properties>
 
@@ -64,6 +64,16 @@ under the License.
             <artifactId>play</artifactId>
             <version>${play.version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.crud</groupId>
+            <artifactId>play-crud</artifactId>
+            <version>${play.version}</version>
+            <classifier>module</classifier>
+            <!--<classifier>module-resources</classifier>-->
+            <type>zip</type>
+            <!--???<scope>provided</scope>-->
         </dependency>
 
         <!-- not needed, only for packaging testing -->
@@ -114,6 +124,28 @@ under the License.
 
     <profiles>
         <profile>
+            <id>autodeps</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.google.code.maven-play-plugin</groupId>
+                        <artifactId>play-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>play-dependencies</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>dependencies</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
             <id>dist</id>
 
             <dependencies>
@@ -126,13 +158,8 @@ under the License.
                     <scope>provided</scope>
                 </dependency>
 
-                <dependency>
-                    <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-                    <artifactId>play-testrunner</artifactId>
-                    <version>${play.version}</version>
-                    <scope>provided</scope>
-                </dependency>
-
+                <!-- Play! TestRunner module if someone wants to run the tests; only for Play! 1.2.x -->
+                <!-- DOES NOT WORK
                 <dependency>
                     <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
                     <artifactId>play-testrunner</artifactId>
@@ -141,17 +168,33 @@ under the License.
                     <type>zip</type>
                     <scope>provided</scope>
                 </dependency>
+                -->
             </dependencies>
 
             <build>
                 <plugins>
+                    <plugin>
+                        <groupId>com.google.code.maven-play-plugin</groupId>
+                        <artifactId>play-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>war-support</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>precompile</goal>
+                                    <goal>war-support</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-assembly-plugin</artifactId>
                         <version>2.2.1</version>
                         <configuration>
                             <descriptors>
-                                <descriptor>${basedir}/assembly-uberzip.xml</descriptor>
+                                <descriptor>${basedir}/assembly-war.xml</descriptor>
                             </descriptors>
                         </configuration>
                         <executions>

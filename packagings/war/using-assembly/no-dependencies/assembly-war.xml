@@ -1,0 +1,102 @@
+<assembly>
+    <id>war</id>
+
+    <formats>
+        <format>war</format>
+    </formats>
+
+    <includeSiteDirectory>false</includeSiteDirectory>
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <fileSets>
+        <fileSet>
+            <directory>${basedir}</directory>
+            <outputDirectory>WEB-INF/application</outputDirectory>
+            <includes>
+                <include>app/**</include>
+                <include>conf/*</include>
+                <include>precompiled/**</include>
+                <include>public/**</include>
+                <include>test/**</include> <!-- cannot invoke @tests, so what is it for here? -->
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>${basedir}/conf</directory>
+            <outputDirectory>WEB-INF/classes</outputDirectory>
+        </fileSet>
+    </fileSets>
+
+    <files>
+        <file>
+            <source>${project.build.directory}/play/tmp/filtered-web.xml</source>
+            <outputDirectory>WEB-INF</outputDirectory>
+            <destName>web.xml</destName>
+        </file>
+    </files>
+
+    <dependencySets>
+
+        <!-- Play! framework -->
+
+        <dependencySet>
+            <scope>provided</scope>
+            <outputDirectory>WEB-INF</outputDirectory>
+            <includes>
+                <include>com.google.code.maven-play-plugin.org.playframework:play:zip:framework</include>
+            </includes>
+            <unpack>true</unpack>
+            <unpackOptions>
+                <includes>
+                    <include>framework/templates/**</include>
+                    <include>resources/messages</include>
+                </includes>
+            </unpackOptions>
+        </dependencySet>
+
+        <dependencySet>
+            <scope>provided</scope>
+            <outputDirectory>WEB-INF/lib</outputDirectory>
+            <includes>
+                <include>com.google.code.maven-play-plugin.org.playframework:play:jar</include>
+            </includes>
+            <useTransitiveFiltering>true</useTransitiveFiltering>
+        </dependencySet>
+
+        <!-- Play! TestRunner module if someone wants to run the tests; only for Play! 1.2.x -->
+        <!-- DOES NOT WORK
+        <dependencySet>
+            <scope>provided</scope>
+            <outputDirectory>WEB-INF/application/modules/testrunner</outputDirectory>
+            <includes>
+                <include>com.google.code.maven-play-plugin.org.playframework.modules.testrunner:play-testrunner:zip:module</include>
+            </includes>
+            <unpack>true</unpack>
+        </dependencySet>
+        -->
+
+        <!-- 'jar' type dependencies other than Play! framework and Play! modules -->
+
+        <dependencySet>
+            <scope>runtime</scope>
+            <outputDirectory>WEB-INF/lib</outputDirectory>
+            <includes>
+                <include>*:*:jar:*</include>
+            </includes>
+            <useProjectArtifact>false</useProjectArtifact>
+            <useTransitiveFiltering>true</useTransitiveFiltering>
+        </dependencySet>
+
+        <dependencySet>
+            <scope>compile</scope>
+            <outputDirectory>WEB-INF/lib</outputDirectory>
+            <includes>
+                <include>*:*:jar:*</include>
+            </includes>
+            <excludes>
+                <exclude>com.google.code.maven-play-plugin.org.playframework:play</exclude>
+            </excludes>
+            <useProjectArtifact>false</useProjectArtifact>
+            <useTransitiveFiltering>true</useTransitiveFiltering>
+        </dependencySet>
+    </dependencySets>
+</assembly>

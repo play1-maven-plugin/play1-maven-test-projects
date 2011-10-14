@@ -28,11 +28,11 @@ under the License.
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.test-projects.packagings.default.inter-app-dependency</groupId>
-    <artifactId>app2</artifactId>
+    <groupId>com.google.code.maven-play-plugin.test-projects.packagings.war.using-assembly</groupId>
+    <artifactId>no-dependencies</artifactId>
     <packaging>play</packaging>
 
-    <name>Play! Framework Maven Test Projects : Packagings : Default : Inter-App Dependency : App2</name>
+    <name>Play! Framework Maven Test Projects : Packagings : WAR : Using Assembly : No Dependencies</name>
 
     <repositories>
         <repository>
@@ -64,13 +64,6 @@ under the License.
             <artifactId>play</artifactId>
             <version>${play.version}</version>
             <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>app1</artifactId>
-            <version>${project.version}</version>
-            <type>play</type>
         </dependency>
 
         <!-- not needed, only for packaging testing -->
@@ -115,11 +108,76 @@ under the License.
                 <groupId>com.google.code.maven-play-plugin</groupId>
                 <artifactId>play-maven-plugin</artifactId>
                 <extensions>true</extensions>
-                <configuration>
-                    <zipDependencies>true</zipDependencies>
-                </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>dist</id>
+
+            <dependencies>
+                <dependency>
+                    <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
+                    <artifactId>play</artifactId>
+                    <version>${play.version}</version>
+                    <classifier>framework</classifier>
+                    <type>zip</type>
+                    <scope>provided</scope>
+                </dependency>
+
+                <!-- Play! TestRunner module if someone wants to run the tests; only for Play! 1.2.x -->
+                <!-- DOES NOT WORK
+                <dependency>
+                    <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
+                    <artifactId>play-testrunner</artifactId>
+                    <version>${play.version}</version>
+                    <classifier>module</classifier>
+                    <type>zip</type>
+                    <scope>provided</scope>
+                </dependency>
+                -->
+            </dependencies>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.google.code.maven-play-plugin</groupId>
+                        <artifactId>play-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>war-support</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>precompile</goal>
+                                    <goal>war-support</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <version>2.2.1</version>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>${basedir}/assembly-war.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>make-assembly</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>single</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>
