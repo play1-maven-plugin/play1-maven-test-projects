@@ -147,7 +147,7 @@ under the License.
                         <executions>
                             <execution>
                                 <id>play-dependencies</id>
-                                <phase>initialize</phase>
+                                <phase>validate</phase>
                                 <goals>
                                     <goal>dependencies</goal>
                                 </goals>
