@@ -91,6 +91,16 @@ under the License.
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- needed only if "play.home" property not set -->
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
+            <artifactId>play</artifactId>
+            <version>${play.version}</version>
+            <classifier>framework-resources</classifier>
+            <type>zip</type>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>

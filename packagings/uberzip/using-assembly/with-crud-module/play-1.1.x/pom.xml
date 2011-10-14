@@ -91,6 +91,26 @@ under the License.
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- needed only if "play.home" property not set -->
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
+            <artifactId>play</artifactId>
+            <version>${play.version}</version>
+            <classifier>framework-resources</classifier>
+            <type>zip</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- needed only if "play.home" property not set -->
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.crud</groupId>
+            <artifactId>play-crud</artifactId>
+            <version>${play.version}</version>
+            <classifier>module-resources</classifier>
+            <type>zip</type>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -122,7 +142,6 @@ under the License.
                     <artifactId>play-crud</artifactId>
                     <version>${play.version}</version>
                     <classifier>module</classifier>
-                    <!--<classifier>module-resources</classifier>-->
                     <type>zip</type>
                     <scope>provided</scope>
                 </dependency>
@@ -139,7 +158,6 @@ under the License.
                     <artifactId>play-testrunner</artifactId>
                     <version>${play.version}</version>
                     <classifier>module</classifier>
-                    <!--<classifier>module-resources</classifier>-->
                     <type>zip</type>
                     <scope>provided</scope>
                 </dependency>
