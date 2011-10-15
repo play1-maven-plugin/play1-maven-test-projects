@@ -87,15 +87,6 @@ under the License.
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>2.3</version>
             </plugin>
@@ -107,10 +98,10 @@ under the License.
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.3</version>
                 <configuration>
                     <linkJavadoc>false</linkJavadoc>
                 </configuration>
-                <version>2.2</version>
             </plugin>
 
             <plugin>
@@ -119,11 +110,8 @@ under the License.
                 <version>2.3.2</version>
                 <configuration>
                     <effort>High</effort>
-                    <!--<findbugsXmlOutput>true</findbugsXmlOutput>-->
-                    <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
                     <includeTests>true</includeTests>
                     <threshold>Low</threshold>
-                    <xmlOutput>true</xmlOutput>
                 </configuration>
             </plugin>
 
