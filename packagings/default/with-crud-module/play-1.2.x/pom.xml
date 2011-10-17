@@ -71,7 +71,7 @@ under the License.
             <artifactId>play-crud</artifactId>
             <version>${play.version}</version>
             <classifier>module</classifier>
-            <!--<classifier>module-resources</classifier>-->
+            <!--<classifier>module-min</classifier>-->
             <type>zip</type>
             <!--???<scope>provided</scope>-->
         </dependency>
@@ -81,7 +81,7 @@ under the License.
             <artifactId>play-crud</artifactId>
             <version>${play.version}</version>
             <classifier>module</classifier>
-            <!--<classifier>module-resources</classifier>-->
+            <!--<classifier>module-min</classifier>-->
             <type>zip</type>
             <!--???<scope>provided</scope>-->
         </dependency>
@@ -116,7 +116,7 @@ under the License.
             <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
             <artifactId>play</artifactId>
             <version>${play.version}</version>
-            <classifier>framework-resources</classifier>
+            <classifier>framework-min</classifier>
             <type>zip</type>
             <scope>provided</scope>
         </dependency>
