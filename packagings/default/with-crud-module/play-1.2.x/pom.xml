@@ -76,16 +76,6 @@ under the License.
             <!--???<scope>provided</scope>-->
         </dependency>
 
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.crud</groupId>
-            <artifactId>play-crud</artifactId>
-            <version>${play.version}</version>
-            <classifier>module</classifier>
-            <!--<classifier>module-min</classifier>-->
-            <type>zip</type>
-            <!--???<scope>provided</scope>-->
-        </dependency>
-
         <!-- not needed, only for packaging testing -->
         <dependency>
             <groupId>net.sf.opencsv</groupId>
