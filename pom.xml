@@ -21,24 +21,20 @@ under the License.
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
+    <parent>
+        <groupId>com.google.code.maven-play-plugin</groupId>
+        <artifactId>maven-parent</artifactId>
+        <version>1.0.0-alpha3-SNAPSHOT</version>
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin</groupId>
-    <artifactId>plugin-parent</artifactId>
-    <version>1.0.0-alpha3-SNAPSHOT</version>
+    <artifactId>test-projects</artifactId>
     <packaging>pom</packaging>
 
     <name>Play! Framework Maven Test Projects</name>
     <inceptionYear>2010</inceptionYear>
     <url>http://maven-play-plugin.googlecode.com/svn/mavensite/${project.version}</url>
-
-    <modules>
-        <module>external-modules</module>
-        <module>findbugs</module>
-        <module>packagings</module>
-        <module>selenium</module>
-        <module>surefire</module>
-        <module>surefire-with-failures</module>
-    </modules>
 
     <repositories>
         <repository>
@@ -59,21 +55,20 @@ under the License.
         </repository>
     </repositories>
 
+    <modules>
+        <module>external-modules</module>
+        <module>findbugs</module>
+        <module>packagings</module>
+        <module>selenium</module>
+        <module>surefire</module>
+        <module>surefire-with-failures</module>
+    </modules>
+
     <distributionManagement>
-        <repository>
-            <id>com.google.code.maven-play-plugin</id>
-            <name>Maven Play Plugin - releases</name>
-            <url>dav:https://maven-play-plugin.googlecode.com/svn/mavenrepo/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>com.google.code.maven-play-plugin-snapshots</id>
-            <name>Maven Play Plugin - snapshots</name>
-            <url>dav:https://maven-play-plugin.googlecode.com/svn/mavenrepo/snapshots</url>
-        </snapshotRepository>
         <site>
             <id>com.google.code.maven-play-plugin-sites</id>
             <name>Maven Play Plugin - sites</name>
-            <url>dav:https://maven-play-plugin.googlecode.com/svn/mavensite/${project.version}</url>
+            <url>dav:https://maven-play-plugin.googlecode.com/svn/mavensite/test-projects/${project.version}</url>
         </site>
     </distributionManagement>
 
