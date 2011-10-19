@@ -24,12 +24,13 @@ under the License.
     <parent>
         <groupId>com.google.code.maven-play-plugin</groupId>
         <artifactId>play-app-default-parent</artifactId>
-        <version>1.0.0-alpha3-SNAPSHOT</version>
+        <version>1.0.0-alpha3</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
     <artifactId>findbugs</artifactId>
+    <version>1.0.0-alpha3-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : FindBugs</name>
