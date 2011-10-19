@@ -34,8 +34,6 @@ under the License.
     <packaging>pom</packaging>
 
     <name>Play! Framework Maven Test Projects</name>
-    <inceptionYear>2010</inceptionYear>
-    <url>http://maven-play-plugin.googlecode.com/svn/mavensite/test-projects/${project.version}</url>
 
     <repositories>
         <repository>
