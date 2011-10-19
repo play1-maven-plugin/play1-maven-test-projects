@@ -30,6 +30,7 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin</groupId>
     <artifactId>test-projects</artifactId>
+    <version>1.0.0-alpha3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Play! Framework Maven Test Projects</name>
@@ -66,7 +67,7 @@ under the License.
     <scm>
         <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/</connection>
         <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/</developerConnection>
-        <url>http://code.google.com/p/maven-play-plugin/source/browse/</url>
+        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/</url>
     </scm>
 
     <modules>
