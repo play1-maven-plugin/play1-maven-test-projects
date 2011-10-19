@@ -101,7 +101,7 @@ under the License.
         <dependency>
             <groupId>com.google.code.maven-play-plugin</groupId>
             <artifactId>play-selenium-junit4</artifactId>
-            <version>${project.version}</version>
+            <version>1.0.0-alpha3</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
