@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>com.google.code.maven-play-plugin</groupId>
         <artifactId>play-app-default-parent</artifactId>
-        <version>1.0.0-alpha3</version>
+        <version>1.0.0-alpha4-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -85,7 +85,7 @@ under the License.
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
             <artifactId>play-testrunner</artifactId>
             <version>${play.version}</version>
-            <scope>test</scope>
+            <scope>provided</scope>
         </dependency>
 
         <!-- needed only if "play.home" property not set -->

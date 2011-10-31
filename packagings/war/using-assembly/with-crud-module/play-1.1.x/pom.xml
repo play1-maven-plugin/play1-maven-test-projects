@@ -24,7 +24,7 @@ under the License.
     <parent>
         <groupId>com.google.code.maven-play-plugin</groupId>
         <artifactId>play-app-default-parent</artifactId>
-        <version>1.0.0-alpha3</version>
+        <version>1.0.0-alpha4-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -92,7 +92,6 @@ under the License.
             </exclusions>
         </dependency>
 
-        <!-- needed only if "play.home" property not set -->
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
             <artifactId>play</artifactId>
@@ -102,12 +101,11 @@ under the License.
             <scope>provided</scope>
         </dependency>
 
-        <!-- needed only if "play.home" property not set -->
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.crud</groupId>
             <artifactId>play-crud</artifactId>
             <version>${play.version}</version>
-            <classifier>module-min</classifier>
+            <classifier>module</classifier>
             <type>zip</type>
             <scope>provided</scope>
         </dependency>
@@ -128,27 +126,15 @@ under the License.
             <id>dist</id>
 
             <dependencies>
-                <dependency>
-                    <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-                    <artifactId>play</artifactId>
-                    <version>${play.version}</version>
-                    <classifier>framework</classifier>
-                    <type>zip</type>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>com.google.code.maven-play-plugin.org.playframework.modules.crud</groupId>
-                    <artifactId>play-crud</artifactId>
-                    <version>${play.version}</version>
-                    <classifier>module</classifier>
-                    <!--<classifier>module-min</classifier>-->
-                    <type>zip</type>
-                    <scope>provided</scope>
-                </dependency>
-
                 <!-- Play! TestRunner module if someone wants to run the tests; only for Play! 1.2.x -->
                 <!-- DOES NOT WORK
+                <dependency>
+                    <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
+                    <artifactId>play-testrunner</artifactId>
+                    <version>${play.version}</version>
+                    <scope>provided</scope>
+                </dependency>
+
                 <dependency>
                     <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
                     <artifactId>play-testrunner</artifactId>

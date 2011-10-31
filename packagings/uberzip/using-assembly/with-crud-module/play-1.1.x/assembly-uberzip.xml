@@ -1,5 +1,5 @@
 <assembly>
-    <id>uber</id>
+    <id>with-framework</id>
 
     <formats>
         <format>zip</format>
@@ -57,7 +57,7 @@
         <dependencySet>
             <scope>provided</scope>
             <outputDirectory>modules/testrunner/lib</outputDirectory>
-            <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
+            <!--??? <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>-->
             <includes>
                 <include>com.google.code.maven-play-plugin.org.playframework.modules.testrunner:play-testrunner:jar</include>
             </includes>

@@ -23,6 +23,12 @@
         <fileSet>
             <directory>${basedir}/conf</directory>
             <outputDirectory>WEB-INF/classes</outputDirectory>
+            <includes>
+                <include>application.conf</include>
+                <include>messages</include>
+                <include>messages.*</include>
+                <include>routes</include>
+            </includes>
         </fileSet>
     </fileSets>
 
@@ -42,7 +48,7 @@
             <scope>provided</scope>
             <outputDirectory>WEB-INF</outputDirectory>
             <includes>
-                <include>com.google.code.maven-play-plugin.org.playframework:play:zip:framework</include>
+                <include>com.google.code.maven-play-plugin.org.playframework:play:zip:framework-min</include>
             </includes>
             <unpack>true</unpack>
             <unpackOptions>
