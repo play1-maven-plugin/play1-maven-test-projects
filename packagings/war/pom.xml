@@ -36,6 +36,7 @@ under the License.
 
     <modules>
         <module>using-assembly</module>
+        <module>using-play-war</module>
     </modules>
 
 </project>

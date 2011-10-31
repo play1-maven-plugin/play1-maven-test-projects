@@ -22,21 +22,21 @@ under the License.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
-        <artifactId>packagings</artifactId>
+        <groupId>com.google.code.maven-play-plugin.test-projects.packagings.uberzip</groupId>
+        <artifactId>using-assembly</artifactId>
         <version>1.0.0-alpha4-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.test-projects.packagings</groupId>
-    <artifactId>uberzip</artifactId>
+    <groupId>com.google.code.maven-play-plugin.test-projects.packagings.uberzip.using-play-uberzip</groupId>
+    <artifactId>with-crud-module</artifactId>
     <packaging>pom</packaging>
 
-    <name>Play! Framework Maven Test Projects : Packagings : UberZip</name>
+    <name>Play! Framework Maven Test Projects : Packagings : UberZip : Using play:uberzip : With CRUD Module</name>
 
     <modules>
-        <module>using-assembly</module>
-        <module>using-play-uberzip</module>
+        <module>play-1.1.x</module>
+        <module>play-1.2.x</module>
     </modules>
 
 </project>

@@ -1,1 +1,1 @@
-Future 'uberzip' mojo will implement this functionality.
+If "uberzip" mojo is too limited, using assembly allows full packaging customization.
