@@ -30,7 +30,7 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.packagings.uberzip.using-play-uberzip.with-crud-module</groupId>
     <artifactId>play-1_1_x</artifactId>
-    <version>1.0.0-alpha4</version>
+    <version>1.0.0-alpha5-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : Packagings : UberZip : Using play:uberzip : With CRUD Module : Play! 1.1.x</name>
