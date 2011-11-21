@@ -38,6 +38,7 @@ under the License.
         <module>excel</module>
         <module>less</module>
         <module>morphia</module>
+        <module>sass</module>
     </modules>
 
 </project>
