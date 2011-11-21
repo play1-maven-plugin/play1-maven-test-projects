@@ -35,7 +35,8 @@ under the License.
     <name>Play! Framework Maven Test Projects : External Modules : Morphia</name>
 
     <modules>
-        <module>1.2.4b</module>
+        <module>unit-tests</module>
+        <module>yabe</module>
     </modules>
 
 </project>

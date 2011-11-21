@@ -28,12 +28,12 @@ under the License.
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.org.playframework.modules.morphia.1.2.4b.samples-and-tests</groupId>
+    <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.morphia</groupId>
     <artifactId>yabe</artifactId>
     <version>1.0.0-alpha5-SNAPSHOT</version>
     <packaging>play</packaging>
 
-    <name>Play! Framework Maven Test Projects : External Modules : Morphia : 1.2.4b : Samples and Tests : YABE</name>
+    <name>Play! Framework Maven Test Projects : External Modules : Morphia : YABE</name>
 
     <repositories>
         <repository>
