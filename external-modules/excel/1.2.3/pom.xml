@@ -22,22 +22,20 @@ under the License.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>com.google.code.maven-play-plugin</groupId>
-        <artifactId>test-projects</artifactId>
+        <groupId>com.google.code.maven-play-plugin.test-projects.external-modules</groupId>
+        <artifactId>excel</artifactId>
         <version>1.0.0-alpha5-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
-    <artifactId>external-modules</artifactId>
+    <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.excel</groupId>
+    <artifactId>1.2.3</artifactId>
     <packaging>pom</packaging>
 
-    <name>Play! Framework Maven Test Projects : External Modules</name>
+    <name>Play! Framework Maven Test Projects : External Modules : Excel : 1.2.3</name>
 
     <modules>
         <module>excel</module>
-        <module>less</module>
-        <module>morphia</module>
     </modules>
 
 </project>
