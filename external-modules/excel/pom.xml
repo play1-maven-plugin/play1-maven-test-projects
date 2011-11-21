@@ -22,20 +22,86 @@ under the License.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
-        <artifactId>external-modules</artifactId>
-        <version>1.0.0-alpha5-SNAPSHOT</version>
+        <groupId>com.google.code.maven-play-plugin</groupId>
+        <artifactId>play-app-default-parent</artifactId>
+        <version>1.0.0-alpha4</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules</groupId>
     <artifactId>excel</artifactId>
-    <packaging>pom</packaging>
+    <version>1.0.0-alpha5-SNAPSHOT</version>
+    <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Excel</name>
 
-    <modules>
-        <module>1.2.3</module>
-    </modules>
+    <repositories>
+        <repository>
+            <id>com.google.code.maven-play-plugin</id>
+            <name>Maven Play Plugin - releases</name>
+            <url>http://maven-play-plugin.googlecode.com/svn/mavenrepo/releases</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>com.google.code.maven-play-plugin-snapshots</id>
+            <name>Maven Play Plugin - snapshots</name>
+            <url>http://maven-play-plugin.googlecode.com/svn/mavenrepo/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <properties>
+        <play.version>1.2.3</play.version>
+        <play.seleniumSkip>true</play.seleniumSkip>
+
+        <excel.version>1.2.3</excel.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
+            <artifactId>play</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- needed only if "play.home" property not set -->
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
+            <artifactId>play</artifactId>
+            <version>${play.version}</version>
+            <classifier>framework-min</classifier>
+            <type>zip</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.excel</groupId>
+            <artifactId>play-excel</artifactId>
+            <version>${excel.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.excel</groupId>
+            <artifactId>play-excel</artifactId>
+            <version>${excel.version}</version>
+            <classifier>module-min</classifier>
+            <type>zip</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.google.code.maven-play-plugin</groupId>
+                <artifactId>play-maven-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
