@@ -5,11 +5,12 @@ import play.mvc.*;
 
 import java.util.*;
 
+//import models.*;
+
 public class Application1 extends Controller {
 
     public static void index() {
-        String multiline = "a\nb\n\nc\n\n\n\n\n\n";
-        render(multiline);
+        render();
     }
 
 }
