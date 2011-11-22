@@ -10,4 +10,9 @@ public class BasicTest extends UnitTest {
         assertEquals(2, 1 + 1);
     }
 
+    @Test
+    public void failingTest() {
+        assertEquals(3, 1 + 1);
+    }
+
 }
