@@ -29,11 +29,11 @@ under the License.
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
-    <artifactId>selenium</artifactId>
+    <artifactId>selenium-with-failures</artifactId>
     <version>1.0.0-alpha5-SNAPSHOT</version>
     <packaging>play</packaging>
 
-    <name>Play! Framework Maven Test Projects : Selenium Integration Tests</name>
+    <name>Play! Framework Maven Test Projects : Selenium Integration Tests with failures</name>
 
     <repositories>
         <repository>
@@ -129,6 +129,14 @@ under the License.
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <skip>true</skip>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
 

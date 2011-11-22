@@ -65,6 +65,7 @@ under the License.
         <module>findbugs</module>
         <module>packagings</module>
         <module>selenium</module>
+        <module>selenium-with-failures</module>
         <module>surefire</module>
         <module>surefire-with-failures</module>
     </modules>
