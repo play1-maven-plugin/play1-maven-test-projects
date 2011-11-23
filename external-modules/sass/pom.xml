@@ -68,6 +68,13 @@ under the License.
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
+            <artifactId>play-testrunner</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- needed only if "play.home" property not set -->
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
@@ -94,13 +101,6 @@ under the License.
 
         <!-- for Selenium tests only -->
 
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
         <!-- needed only if "play.home" property not set -->
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
@@ -114,7 +114,7 @@ under the License.
         <dependency>
             <groupId>com.google.code.maven-play-plugin</groupId>
             <artifactId>play-selenium-junit4</artifactId>
-            <version>1.0.0-alpha4-SNAPSHOT</version>
+            <version>1.0.0-alpha4</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

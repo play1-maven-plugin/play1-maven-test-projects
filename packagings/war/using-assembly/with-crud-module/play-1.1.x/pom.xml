@@ -67,6 +67,13 @@ under the License.
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
+            <artifactId>play-testrunner</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- not needed, only for packaging testing -->
         <dependency>
             <groupId>net.sf.opencsv</groupId>
@@ -140,13 +147,6 @@ under the License.
             <dependencies>
                 <!-- Play! TestRunner module if someone wants to run the tests; only for Play! 1.2.x -->
                 <!-- DOES NOT WORK
-                <dependency>
-                    <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-                    <artifactId>play-testrunner</artifactId>
-                    <version>${play.version}</version>
-                    <scope>provided</scope>
-                </dependency>
-
                 <dependency>
                     <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
                     <artifactId>play-testrunner</artifactId>

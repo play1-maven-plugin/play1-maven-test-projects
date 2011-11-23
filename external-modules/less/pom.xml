@@ -69,6 +69,13 @@ under the License.
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
+            <artifactId>play-testrunner</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- needed only if "play.home" property not set -->
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
@@ -85,7 +92,7 @@ under the License.
             <version>${less.version}</version>
         </dependency>
 
-        <!-- actually only jar is needed
+        <!-- not needed, only jar dependency required
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.less</groupId>
             <artifactId>play-less</artifactId>

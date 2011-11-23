@@ -67,6 +67,13 @@ under the License.
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
+            <artifactId>play-testrunner</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- not needed, only for packaging testing -->
         <dependency>
             <groupId>net.sf.opencsv</groupId>
@@ -153,13 +160,6 @@ under the License.
                     <version>${play.version}</version>
                     <classifier>module</classifier>
                     <type>zip</type>
-                    <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-                    <artifactId>play-testrunner</artifactId>
-                    <version>${play.version}</version>
                     <scope>provided</scope>
                 </dependency>
 

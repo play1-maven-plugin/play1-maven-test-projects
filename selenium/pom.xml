@@ -59,12 +59,16 @@ under the License.
     </properties>
 
     <dependencies>
-
-        <!-- Play! framework dependencies -->
-
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
             <artifactId>play</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
+            <artifactId>play-testrunner</artifactId>
             <version>${play.version}</version>
             <scope>provided</scope>
         </dependency>
@@ -90,13 +94,6 @@ under the License.
         </dependency>
 
         <!-- for Selenium tests only -->
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
 
         <!-- needed only if "play.home" property not set -->
         <dependency>
