@@ -129,7 +129,7 @@ under the License.
         <dependency>
             <groupId>com.google.code.maven-play-plugin</groupId>
             <artifactId>play-selenium-junit4</artifactId>
-            <version>1.0.0-alpha4</version>
+            <version>1.0.0-alpha5-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
