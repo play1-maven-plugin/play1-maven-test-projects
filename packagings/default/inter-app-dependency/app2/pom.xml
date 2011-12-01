@@ -68,6 +68,25 @@ under the License.
         </dependency>
 
         <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
+            <artifactId>play</artifactId>
+            <version>${play.version}</version>
+            <classifier>framework-min</classifier>
+            <type>zip</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- needed only for "welcome" macro in "Application/index.html" template -->
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.docviewer</groupId>
+            <artifactId>play-docviewer</artifactId>
+            <version>${play.version}</version>
+            <classifier>module</classifier>
+            <type>zip</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
             <artifactId>play-testrunner</artifactId>
             <version>${play.version}</version>
@@ -105,26 +124,6 @@ under the License.
                 </exclusion>
             </exclusions>
         </dependency>
-
-        <!-- needed only if "play.home" property not set -->
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <classifier>framework-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- needed only for "welcome" macro in "Application/index.html" template, only if "play.home" property not set -->
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.docviewer</groupId>
-            <artifactId>play-docviewer</artifactId>
-            <version>${play.version}</version>
-            <classifier>module-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -134,6 +133,7 @@ under the License.
                 <artifactId>play-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
+                    <dependenciesSkipJars>true</dependenciesSkipJars>
                     <zipDependencies>true</zipDependencies>
                 </configuration>
             </plugin>

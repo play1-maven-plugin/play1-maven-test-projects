@@ -23,12 +23,6 @@
         <fileSet>
             <directory>${basedir}/conf</directory>
             <outputDirectory>WEB-INF/classes</outputDirectory>
-            <includes>
-                <include>application.conf</include>
-                <include>messages</include>
-                <include>messages.*</include>
-                <include>routes</include>
-            </includes>
         </fileSet>
     </fileSets>
 
@@ -42,7 +36,30 @@
 
     <dependencySets>
 
+        <!-- Application's runtime dependencies -->
+
+        <dependencySet>
+            <scope>runtime</scope>
+            <outputDirectory>WEB-INF/lib</outputDirectory>
+            <includes>
+                <include>*:*:jar:*</include>
+            </includes>
+            <useProjectArtifact>false</useProjectArtifact>
+        </dependencySet>
+
         <!-- Play! framework -->
+
+        <dependencySet>
+            <scope>provided</scope>
+            <outputDirectory>WEB-INF/lib</outputDirectory>
+            <includes>
+                <include>*:*:jar:*</include>
+            </includes>
+            <excludes>
+                <exclude>com.google.code.maven-play-plugin.org.playframework.modules.testrunner:play-testrunner:jar</exclude>
+            </excludes>
+            <useProjectArtifact>false</useProjectArtifact>
+        </dependencySet>
 
         <dependencySet>
             <scope>provided</scope>
@@ -70,36 +87,23 @@
 
         <dependencySet>
             <scope>provided</scope>
-            <outputDirectory>WEB-INF/lib</outputDirectory>
+            <outputDirectory>WEB-INF/modules/docviewer</outputDirectory>
             <includes>
-                <include>com.google.code.maven-play-plugin.org.playframework:play:jar</include>
+                <include>com.google.code.maven-play-plugin.org.playframework.modules.docviewer:play-docviewer:zip:module</include>
             </includes>
-            <useTransitiveFiltering>true</useTransitiveFiltering>
+            <unpack>true</unpack>
         </dependencySet>
 
-        <!-- 'jar' type dependencies other than Play! framework and Play! modules -->
-
+        <!-- Play! TestRunner module if someone wants to run the tests; only for Play! 1.2.x -->
+        <!-- DOES NOT WORK
         <dependencySet>
-            <scope>runtime</scope>
-            <outputDirectory>WEB-INF/lib</outputDirectory>
+            <scope>provided</scope>
+            <outputDirectory>WEB-INF/application/modules/testrunner</outputDirectory>
             <includes>
-                <include>*:*:jar:*</include>
+                <include>com.google.code.maven-play-plugin.org.playframework.modules.testrunner:play-testrunner:zip:module</include>
             </includes>
-            <useProjectArtifact>false</useProjectArtifact>
-            <useTransitiveFiltering>true</useTransitiveFiltering>
+            <unpack>true</unpack>
         </dependencySet>
-
-        <dependencySet>
-            <scope>compile</scope>
-            <outputDirectory>WEB-INF/lib</outputDirectory>
-            <includes>
-                <include>*:*:jar:*</include>
-            </includes>
-            <excludes>
-                <exclude>com.google.code.maven-play-plugin.org.playframework:play</exclude>
-            </excludes>
-            <useProjectArtifact>false</useProjectArtifact>
-            <useTransitiveFiltering>true</useTransitiveFiltering>
-        </dependencySet>
+        -->
     </dependencySets>
 </assembly>

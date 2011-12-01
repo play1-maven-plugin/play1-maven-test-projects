@@ -68,9 +68,11 @@ under the License.
         </dependency>
 
         <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
+            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
+            <artifactId>play</artifactId>
             <version>${play.version}</version>
+            <classifier>framework-min</classifier>
+            <type>zip</type>
             <scope>provided</scope>
         </dependency>
 
@@ -78,8 +80,25 @@ under the License.
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.crud</groupId>
             <artifactId>play-crud</artifactId>
             <version>${play.version}</version>
-            <classifier>module-min</classifier>
+            <classifier>module</classifier>
             <type>zip</type>
+        </dependency>
+
+        <!-- needed only for "welcome" macro in "Application/index.html" template -->
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.docviewer</groupId>
+            <artifactId>play-docviewer</artifactId>
+            <version>${play.version}</version>
+            <classifier>module</classifier>
+            <type>zip</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
+            <artifactId>play-testrunner</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- not needed, only for packaging testing -->
@@ -105,26 +124,6 @@ under the License.
                     <artifactId>log4j</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-
-        <!-- needed only if "play.home" property not set -->
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <classifier>framework-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- needed only for "welcome" macro in "Application/index.html" template, only if "play.home" property not set -->
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.docviewer</groupId>
-            <artifactId>play-docviewer</artifactId>
-            <version>${play.version}</version>
-            <classifier>module-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -172,14 +171,6 @@ under the License.
                     <classifier>framework</classifier>
                     <type>zip</type>
                     <scope>provided</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>com.google.code.maven-play-plugin.org.playframework.modules.crud</groupId>
-                    <artifactId>play-crud</artifactId>
-                    <version>${play.version}</version>
-                    <classifier>module</classifier>
-                    <type>zip</type>
                 </dependency>
 
                 <dependency>
