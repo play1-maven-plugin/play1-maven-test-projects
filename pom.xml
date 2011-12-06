@@ -61,7 +61,7 @@ under the License.
     </scm>
 
     <modules>
-        <module>external-modules</module>
+        <!--<module>external-modules</module>-->
         <module>findbugs</module>
         <module>packagings</module>
         <module>selenium</module>
