@@ -68,14 +68,6 @@ under the License.
         </dependency>
 
         <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- needed only if "play.home" property not set -->
-        <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
             <artifactId>play</artifactId>
             <version>${play.version}</version>
@@ -85,23 +77,23 @@ under the License.
         </dependency>
 
         <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.morphia</groupId>
-            <artifactId>play-morphia</artifactId>
-            <version>${morphia.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.morphia</groupId>
-            <artifactId>play-morphia</artifactId>
-            <version>${morphia.version}</version>
-            <classifier>module-min</classifier>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.crud</groupId>
+            <artifactId>play-crud</artifactId>
+            <version>${play.version}</version>
+            <classifier>module</classifier>
             <type>zip</type>
         </dependency>
 
         <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.crud</groupId>
-            <artifactId>play-crud</artifactId>
-            <version>${play.version}</version>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.morphia</groupId>
+            <artifactId>play-morphia</artifactId>
+            <version>${morphia.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.morphia</groupId>
+            <artifactId>play-morphia</artifactId>
+            <version>${morphia.version}</version>
             <classifier>module-min</classifier>
             <type>zip</type>
         </dependency>
@@ -110,13 +102,19 @@ under the License.
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.secure</groupId>
             <artifactId>play-secure</artifactId>
             <version>${play.version}</version>
-            <classifier>module-min</classifier>
+            <classifier>module</classifier>
             <type>zip</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
+            <artifactId>play-testrunner</artifactId>
+            <version>${play.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- for Selenium tests only -->
 
-        <!-- needed only if "play.home" property not set -->
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
             <artifactId>play-testrunner</artifactId>
