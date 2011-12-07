@@ -30,7 +30,7 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.packagings.war.using-play-war</groupId>
     <artifactId>no-dependencies</artifactId>
-    <version>1.0.0-alpha5-SNAPSHOT</version>
+    <version>1.0.0-alpha5</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : Packagings : WAR : Using play:war : No Dependencies</name>
