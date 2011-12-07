@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.3</play.version>
+        <play.version>1.2.4</play.version>
         <ebean.version>1.0.5</ebean.version>
 
         <selenium.test.trace>true</selenium.test.trace>

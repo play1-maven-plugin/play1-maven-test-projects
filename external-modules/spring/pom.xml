@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.3</play.version>
+        <play.version>1.2.4</play.version>
 
         <spring.version>1.0.2</spring.version>
     </properties>
