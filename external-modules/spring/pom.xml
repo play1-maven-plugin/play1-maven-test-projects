@@ -30,7 +30,7 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules</groupId>
     <artifactId>spring</artifactId>
-    <version>1.0.0-alpha5-SNAPSHOT</version>
+    <version>1.0.0-alpha6-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Spring</name>
