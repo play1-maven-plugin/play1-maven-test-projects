@@ -35,6 +35,7 @@ under the License.
     <name>Play! Framework Maven Test Projects : External Modules</name>
 
     <modules>
+        <module>coffee</module>
         <module>deadbolt</module>
         <module>ebean</module>
         <module>excel</module>
