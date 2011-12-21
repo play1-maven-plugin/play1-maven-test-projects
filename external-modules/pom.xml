@@ -43,6 +43,7 @@ under the License.
         <module>less</module>
         <module>morphia</module>
         <module>sass</module>
+        <module>shibboleth</module>
         <module>spring</module>
     </modules>
 
