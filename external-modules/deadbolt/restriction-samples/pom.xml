@@ -55,7 +55,6 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.4</play.version>
         <deadbolt.version>1.4.3</deadbolt.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>
@@ -63,34 +62,11 @@ under the License.
 
     <dependencies>
         <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>                                             	
-            <classifier>framework-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.deadbolt</groupId>
             <artifactId>play-deadbolt</artifactId>
             <version>${deadbolt.version}</version>
             <classifier>module-min</classifier>
             <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

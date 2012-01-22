@@ -55,29 +55,12 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.4</play.version>
         <play.seleniumSkip>true</play.seleniumSkip>
 
         <morphia.version>1.2.4b</morphia.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <classifier>framework-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.morphia</groupId>
             <artifactId>play-morphia</artifactId>
@@ -98,13 +81,6 @@ under the License.
             <version>${play.version}</version>
             <classifier>module</classifier>
             <type>zip</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 

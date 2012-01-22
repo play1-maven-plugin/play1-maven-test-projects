@@ -55,29 +55,12 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.4</play.version>
         <ebean.version>1.0.5</ebean.version>
 
         <selenium.test.trace>true</selenium.test.trace>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <classifier>framework-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.crud</groupId>
             <artifactId>play-crud</artifactId>
@@ -112,30 +95,6 @@ under the License.
             <classifier>module</classifier>
             <type>zip</type>
             <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- for Selenium tests only -->
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <classifier>module-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin</groupId>
-            <artifactId>play-selenium-junit4</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 

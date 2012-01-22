@@ -61,22 +61,6 @@ under the License.
 
     <dependencies>
         <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>                                             	
-            <classifier>framework-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.coffee</groupId>
             <artifactId>play-coffee</artifactId>
             <version>${coffee.version}</version>
@@ -88,28 +72,6 @@ under the License.
             <version>${coffee.version}</version>
             <classifier>module-min</classifier>
             <type>zip</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <classifier>module-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin</groupId>
-            <artifactId>play-selenium-junit4</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 

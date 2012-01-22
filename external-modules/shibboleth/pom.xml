@@ -55,7 +55,6 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.4</play.version>
         <shibboleth.version>1.1</shibboleth.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>
@@ -63,50 +62,9 @@ under the License.
 
     <dependencies>
         <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>                                             	
-            <classifier>framework-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.docviewer</groupId>
-            <artifactId>play-docviewer</artifactId>
-            <version>${play.version}</version>
-            <classifier>module-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.shibboleth</groupId>
             <artifactId>play-shibboleth</artifactId>
             <version>${shibboleth.version}</version>
-            <classifier>module-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
             <classifier>module-min</classifier>
             <type>zip</type>
             <scope>provided</scope>

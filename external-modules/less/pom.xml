@@ -55,29 +55,12 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.4</play.version>
         <play.seleniumSkip>true</play.seleniumSkip>
 
         <less.version>0.3</less.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework</groupId>
-            <artifactId>play</artifactId>
-            <version>${play.version}</version>
-            <classifier>framework-min</classifier>
-            <type>zip</type>
-            <scope>provided</scope>
-        </dependency>
-
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.less</groupId>
             <artifactId>play-less</artifactId>
@@ -93,13 +76,6 @@ under the License.
             <type>zip</type>
         </dependency>
         -->
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.testrunner</groupId>
-            <artifactId>play-testrunner</artifactId>
-            <version>${play.version}</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <build>
