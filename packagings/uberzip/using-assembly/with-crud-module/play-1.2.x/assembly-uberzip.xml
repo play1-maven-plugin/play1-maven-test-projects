@@ -57,7 +57,7 @@
             <scope>provided</scope>
             <outputDirectory>modules/docviewer</outputDirectory>
             <includes>
-                <include>com.google.code.maven-play-plugin.org.playframework.modules.docviewer:play-docviewer:zip:module</include>
+                <include>com.google.code.maven-play-plugin.org.playframework.modules.docviewer:play-docviewer:zip:module-min</include>
             </includes>
             <unpack>true</unpack>
         </dependencySet>
