@@ -42,6 +42,7 @@ under the License.
         <module>excel</module>
         <module>less</module>
         <module>morphia</module>
+        <module>recaptcha</module>
         <module>sass</module>
         <module>shibboleth</module>
         <module>spring</module>
