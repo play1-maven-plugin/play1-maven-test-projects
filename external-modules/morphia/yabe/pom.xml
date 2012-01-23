@@ -55,6 +55,8 @@ under the License.
     </repositories>
 
     <properties>
+        <play.version>1.2.3</play.version>
+
         <morphia.version>1.2.4b</morphia.version>
     </properties>
 
