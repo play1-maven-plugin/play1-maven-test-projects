@@ -38,6 +38,9 @@ under the License.
         <module>acl</module>
         <module>integration-with-secure</module>
         <module>restriction-samples</module>
+        <module>role-holder-not-present</module>
+        <module>role-holder-present</module>
+        <module>unrestricted-samples</module>
     </modules>
 
 </project>
