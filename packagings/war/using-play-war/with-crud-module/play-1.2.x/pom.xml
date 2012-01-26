@@ -135,13 +135,13 @@ under the License.
                         <groupId>com.google.code.maven-play-plugin</groupId>
                         <artifactId>play-maven-plugin</artifactId>
                         <executions>
-                            <!--tmp<execution>
+                            <execution>
                                 <id>precompile</id>
                                 <phase>prepare-package</phase>
                                 <goals>
                                     <goal>precompile</goal>
                                 </goals>
-                            </execution>-->
+                            </execution>
                             <execution>
                                 <id>make-war</id>
                                 <phase>package</phase>
