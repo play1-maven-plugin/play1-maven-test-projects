@@ -37,6 +37,7 @@ under the License.
     <modules>
         <module>associations</module>
         <module>coffee</module>
+        <module>constretto</module>
         <module>deadbolt</module>
         <module>ebean</module>
         <module>excel</module>
