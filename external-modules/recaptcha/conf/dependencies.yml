@@ -1,5 +1,5 @@
 require: 
      - play
-     - play -> recaptcha 1.2
+     - play -> recaptcha 1.3
  
 
