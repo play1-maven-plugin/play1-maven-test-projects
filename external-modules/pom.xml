@@ -47,6 +47,7 @@ under the License.
         <module>securesocial</module>
         <module>shibboleth</module>
         <module>spring</module>
+        <module>springtester</module>
     </modules>
 
 </project>
