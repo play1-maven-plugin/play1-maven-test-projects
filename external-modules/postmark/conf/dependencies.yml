@@ -1,0 +1,5 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> postmark 1.0
