@@ -43,6 +43,7 @@ under the License.
         <module>excel</module>
         <module>guice</module>
         <module>less</module>
+        <module>markdown</module>
         <module>morphia</module>
         <module>recaptcha</module>
         <module>sass</module>
