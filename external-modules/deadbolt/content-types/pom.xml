@@ -29,11 +29,11 @@ under the License.
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.deadbolt</groupId>
-    <artifactId>integration-with-secure</artifactId>
+    <artifactId>content-types</artifactId>
     <version>1.0.0-alpha7-SNAPSHOT</version>
     <packaging>play</packaging>
 
-    <name>Play! Framework Maven Test Projects : External Modules : Deadbolt : Integration with Secure</name>
+    <name>Play! Framework Maven Test Projects : External Modules : Deadbolt : Content Types</name>
 
     <repositories>
         <repository>

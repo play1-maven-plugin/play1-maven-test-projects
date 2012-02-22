@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <deadbolt.version>1.5</deadbolt.version>
+        <deadbolt.version>1.5.1</deadbolt.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>
     </properties>

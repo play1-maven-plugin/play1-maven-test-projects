@@ -36,6 +36,7 @@ under the License.
 
     <modules>
         <module>acl</module>
+        <module>content-types</module>
         <module>integration-with-secure</module>
         <module>restriction-samples</module>
         <module>role-holder-not-present</module>
