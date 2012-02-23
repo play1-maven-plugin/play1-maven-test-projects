@@ -36,6 +36,7 @@ under the License.
 
     <modules>
         <module>associations</module>
+        <module>cobertura</module>
         <module>coffee</module>
         <module>constretto</module>
         <module>deadbolt</module>
