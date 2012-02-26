@@ -1,1 +1,1 @@
-run "mvn clean verify -Pautodeps"
+run "mvn clean verify"

@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <ebean.version>1.0.5</ebean.version>
+        <ebean.version>1.0.6</ebean.version>
 
         <selenium.test.trace>true</selenium.test.trace>
     </properties>
@@ -68,16 +68,14 @@ under the License.
             <scope>provided</scope>
         </dependency>
 
-        <!-- not needed, only jar is required
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.ebean</groupId>
             <artifactId>play-ebean</artifactId>
             <version>${ebean.version}</version>
-            <classifier>module</classifier>
+            <classifier>module-min</classifier>
             <type>zip</type>
             <scope>provided</scope>
         </dependency>
-        -->
     </dependencies>
 
     <build>
@@ -89,29 +87,5 @@ under the License.
             </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>autodeps</id>
-
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.google.code.maven-play-plugin</groupId>
-                        <artifactId>play-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>play-dependencies</id>
-                                <phase>validate</phase>
-                                <goals>
-                                    <goal>dependencies</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 
 </project>
