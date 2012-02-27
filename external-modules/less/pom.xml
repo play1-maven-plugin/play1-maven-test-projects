@@ -57,7 +57,7 @@ under the License.
     <properties>
         <play.seleniumSkip>true</play.seleniumSkip>
 
-        <less.version>0.3</less.version>
+        <less.version>0.9</less.version>
     </properties>
 
     <dependencies>
@@ -67,15 +67,13 @@ under the License.
             <version>${less.version}</version>
         </dependency>
 
-        <!-- not needed, only jar dependency required
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.less</groupId>
             <artifactId>play-less</artifactId>
             <version>${less.version}</version>
-            <classifier>module</classifier>
+            <classifier>module-min</classifier>
             <type>zip</type>
         </dependency>
-        -->
     </dependencies>
 
     <build>
