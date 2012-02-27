@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <shibboleth.version>1.1</shibboleth.version>
+        <shibboleth.version>1.2</shibboleth.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>
     </properties>
