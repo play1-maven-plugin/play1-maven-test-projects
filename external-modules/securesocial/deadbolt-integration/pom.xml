@@ -86,16 +86,6 @@ under the License.
                 <artifactId>play-maven-plugin</artifactId>
                 <extensions>true</extensions>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>ApplicationTest.java</exclude> <!-- does not work -->
-                    </excludes>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
