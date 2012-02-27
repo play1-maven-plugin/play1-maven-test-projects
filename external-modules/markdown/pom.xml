@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <markdown.version>1.6</markdown.version>
+        <markdown.version>1.7</markdown.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>
     </properties>
