@@ -24,12 +24,13 @@ under the License.
     <parent>
         <groupId>com.google.code.maven-play-plugin</groupId>
         <artifactId>play-app-default-parent</artifactId>
-        <version>1.0.0-alpha7-SNAPSHOT</version>
+        <version>1.0.0-alpha7</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules</groupId>
     <artifactId>cobertura</artifactId>
+    <version>1.0.0-alpha7-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Cobertura</name>
