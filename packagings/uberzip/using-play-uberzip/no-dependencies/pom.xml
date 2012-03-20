@@ -30,7 +30,7 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.packagings.uberzip.using-play-uberzip</groupId>
     <artifactId>no-dependencies</artifactId>
-    <version>1.0.0-alpha7-SNAPSHOT</version>
+    <version>1.0.0-alpha7</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : Packagings : UberZip : Using play:uberzip : No Dependencies</name>
