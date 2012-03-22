@@ -58,7 +58,7 @@ under the License.
         <play.version>1.2.3</play.version>
         <play.seleniumSkip>true</play.seleniumSkip>
 
-        <morphia.version>1.2.4d</morphia.version>
+        <morphia.version>1.2.6</morphia.version>
     </properties>
 
     <dependencies>
