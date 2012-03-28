@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes autoGenerate="true">
+
+    <datastore-index kind="Item" ancestor="false" source="manual">
+        <property name="done" direction="asc"/>
+        <property name="list" direction="asc"/>
+        <property name="position" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Item" ancestor="false" source="manual">
+        <property name="done" direction="asc"/>
+        <property name="list" direction="asc"/>
+        <property name="position" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>
