@@ -1,4 +1,4 @@
-This app is also available online at http://play-lists.appspot.com
+This app is also available online at http://gslowikowski-gae-play.appspot.com
 
 run "mvn gae:unpack" once or set "gae.home" property value.
 
