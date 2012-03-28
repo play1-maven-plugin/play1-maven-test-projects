@@ -57,21 +57,24 @@ under the License.
     <properties>
         <play.seleniumSkip>true</play.seleniumSkip>
 
-        <gae.version>1.6.0-SNAPSHOT</gae.version>
-        <siena.version>2.0.7-SNAPSHOT</siena.version>
+        <play-gae.version>1.6.0-SNAPSHOT</play-gae.version>
+        <play-siena.version>2.0.7-SNAPSHOT</play-siena.version>
+
+        <gae.version>1.6.2.1</gae.version>
+        <!--<gae.home>d:/java/appengine-java-sdk-1.6.2.1</gae.home>-->
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.gae</groupId>
             <artifactId>play-gae</artifactId>
-            <version>${gae.version}</version>
+            <version>${play-gae.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.gae</groupId>
             <artifactId>play-gae</artifactId>
-            <version>${gae.version}</version>
+            <version>${play-gae.version}</version>
             <classifier>module-min</classifier>
             <type>zip</type>
         </dependency>
@@ -79,13 +82,13 @@ under the License.
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.siena</groupId>
             <artifactId>play-siena</artifactId>
-            <version>${siena.version}</version>
+            <version>${play-siena.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.siena</groupId>
             <artifactId>play-siena</artifactId>
-            <version>${siena.version}</version>
+            <version>${play-siena.version}</version>
             <classifier>module-min</classifier>
             <type>zip</type>
         </dependency>
@@ -97,6 +100,27 @@ under the License.
                 <groupId>com.google.code.maven-play-plugin</groupId>
                 <artifactId>play-maven-plugin</artifactId>
                 <extensions>true</extensions>
+            </plugin>
+
+            <plugin>
+                <groupId>net.kindleit</groupId>
+                <artifactId>maven-gae-plugin</artifactId>
+                <version>0.9.2</version>
+                <configuration>
+                    <serverId>appengine.google.com</serverId>
+                    <!--<sdkDir>${appengine.sdk.root}</sdkDir>-->
+                    <!--<appDir>${basedir}/war</appDir>-->
+                    <appDir>${project.build.directory}/war</appDir>
+                    <keepTempUploadDir>true</keepTempUploadDir>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>net.kindleit</groupId>
+                        <artifactId>gae-runtime</artifactId>
+                        <version>${gae.version}</version>
+                        <type>pom</type>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
@@ -138,7 +162,7 @@ under the License.
                                 <phase>package</phase>
                                 <goals>
                                     <goal>precompile</goal>
-                                    <goal>war</goal>
+                                    <goal>war-exploded</goal>
                                 </goals>
                             </execution>
                         </executions>
