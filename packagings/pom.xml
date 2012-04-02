@@ -36,7 +36,7 @@ under the License.
 
     <modules>
         <module>default</module>
-        <module>uberzip</module>
+        <module>dist</module>
         <module>war</module>
     </modules>
 
