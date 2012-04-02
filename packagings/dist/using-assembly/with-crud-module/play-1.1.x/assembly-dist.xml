@@ -1,5 +1,5 @@
 <assembly>
-    <id>with-framework</id>
+    <id>dist</id>
 
     <formats>
         <format>zip</format>
@@ -28,6 +28,7 @@
         <dependencySet>
             <scope>provided</scope>
             <outputDirectory>framework</outputDirectory>
+            <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
             <includes>
                 <include>com.google.code.maven-play-plugin.org.playframework:play:jar</include>
             </includes>
@@ -80,12 +81,9 @@
             <unpack>true</unpack>
         </dependencySet>
 
-        <!-- Application Play! module type dependencies -->
-
         <dependencySet>
-            <!--<scope>provided</scope>-->
-            <scope>runtime</scope>
-            <outputDirectory>application/modules/crud</outputDirectory>
+            <scope>provided</scope>
+            <outputDirectory>modules/crud</outputDirectory>
             <includes>
                 <include>com.google.code.maven-play-plugin.org.playframework.modules.crud:play-crud:zip:module</include>
             </includes>

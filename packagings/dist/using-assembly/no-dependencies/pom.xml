@@ -28,12 +28,12 @@ under the License.
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.test-projects.packagings.uberzip.using-assembly</groupId>
+    <groupId>com.google.code.maven-play-plugin.test-projects.packagings.dist.using-assembly</groupId>
     <artifactId>no-dependencies</artifactId>
     <version>1.0.0-beta1-SNAPSHOT</version>
     <packaging>play</packaging>
 
-    <name>Play! Framework Maven Test Projects : Packagings : UberZip : Using Assembly : No Dependencies</name>
+    <name>Play! Framework Maven Test Projects : Packagings : Dist : Using Assembly : No Dependencies</name>
 
     <repositories>
         <repository>
@@ -127,7 +127,7 @@ under the License.
                         <version>2.3</version>
                         <configuration>
                             <descriptors>
-                                <descriptor>${basedir}/assembly-uberzip.xml</descriptor>
+                                <descriptor>${basedir}/assembly-dist.xml</descriptor>
                             </descriptors>
                         </configuration>
                         <executions>

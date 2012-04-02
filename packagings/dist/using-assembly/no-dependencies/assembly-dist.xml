@@ -1,5 +1,5 @@
 <assembly>
-    <id>with-framework</id>
+    <id>dist</id>
 
     <formats>
         <format>zip</format>
@@ -77,15 +77,6 @@
             <outputDirectory>modules/testrunner</outputDirectory>
             <includes>
                 <include>com.google.code.maven-play-plugin.org.playframework.modules.testrunner:play-testrunner:zip:module</include>
-            </includes>
-            <unpack>true</unpack>
-        </dependencySet>
-
-        <dependencySet>
-            <scope>provided</scope>
-            <outputDirectory>modules/crud</outputDirectory>
-            <includes>
-                <include>com.google.code.maven-play-plugin.org.playframework.modules.crud:play-crud:zip:module</include>
             </includes>
             <unpack>true</unpack>
         </dependencySet>

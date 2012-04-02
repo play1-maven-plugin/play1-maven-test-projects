@@ -29,14 +29,14 @@ under the License.
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.packagings</groupId>
-    <artifactId>uberzip</artifactId>
+    <artifactId>dist</artifactId>
     <packaging>pom</packaging>
 
-    <name>Play! Framework Maven Test Projects : Packagings : UberZip</name>
+    <name>Play! Framework Maven Test Projects : Packagings : Dist</name>
 
     <modules>
         <module>using-assembly</module>
-        <module>using-play-uberzip</module>
+        <module>using-play-dist</module>
     </modules>
 
 </project>
