@@ -61,7 +61,6 @@ under the License.
     </scm>
 
     <modules>
-        <module>external-modules</module>
         <module>findbugs</module>
         <module>packagings</module>
         <module>selenium</module>
@@ -69,5 +68,15 @@ under the License.
         <module>surefire</module>
         <module>surefire-with-failures</module>
     </modules>
+
+    <profiles>
+        <profile>
+            <id>with-external-modules</id>
+
+            <modules>
+                <module>external-modules</module>
+            </modules>
+        </profile>
+    </profiles>
 
 </project>
