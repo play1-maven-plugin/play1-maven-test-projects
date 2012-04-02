@@ -33,7 +33,7 @@ under the License.
     <version>1.0.0-beta2-SNAPSHOT</version>
     <packaging>play</packaging>
 
-    <name>Play! Framework Maven Test Projects : External Modules : Guice : Guice Using Abstract Module without an Injector</name>
+    <name>Play! Framework Maven Test Projects : External Modules : Guice : Using Abstract Module without an Injector</name>
 
     <repositories>
         <repository>
