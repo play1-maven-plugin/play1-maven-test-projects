@@ -53,6 +53,7 @@ under the License.
         <module>scala</module>
         <module>securesocial</module>
         <module>shibboleth</module>
+        <module>siena</module>
         <module>spring</module>
         <module>springtester</module>
     </modules>
