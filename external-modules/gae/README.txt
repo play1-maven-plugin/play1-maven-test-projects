@@ -1,6 +1,6 @@
 This app is also available online at http://gslowikowski-gae-play.appspot.com
 
-run "mvn gae:unpack" once or set "gae.home" property value.
+run "mvn gae:unpack" ONCE or set "gae.home" property value.
 
 run "mvn clean package -Pautodeps,dist"
 run "mvn gae:deploy"

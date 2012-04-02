@@ -42,6 +42,7 @@ under the License.
         <module>deadbolt</module>
         <module>ebean</module>
         <module>excel</module>
+        <module>gae</module>
         <module>guice</module>
         <module>less</module>
         <module>markdown</module>
