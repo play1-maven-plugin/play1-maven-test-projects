@@ -54,8 +54,8 @@ under the License.
         </repository>
 
         <repository>
-            <id>morphia.googlecode.com</id>
-            <name>Morphia Repo at Google Code</name>
+            <id>com.google.code.morphia</id>
+            <name>Morphia - releases and snapshots</name>
             <url>http://morphia.googlecode.com/svn/mavenrepo</url>
         </repository>
     </repositories>
@@ -63,7 +63,7 @@ under the License.
     <properties>
         <play.version>1.2.3</play.version>
 
-        <morphia.version>1.2.6</morphia.version>
+        <morphia.version>1.2.6a</morphia.version>
     </properties>
 
     <dependencies>
