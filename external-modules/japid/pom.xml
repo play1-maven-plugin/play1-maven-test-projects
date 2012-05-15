@@ -22,41 +22,21 @@ under the License.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>com.google.code.maven-play-plugin</groupId>
-        <artifactId>test-projects</artifactId>
+        <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
+        <artifactId>external-modules</artifactId>
         <version>1.0.0-beta2-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
-    <artifactId>external-modules</artifactId>
+    <groupId>com.google.code.maven-play-plugin.test-projects.external-modules</groupId>
+    <artifactId>japid</artifactId>
     <packaging>pom</packaging>
 
-    <name>Play! Framework Maven Test Projects : External Modules</name>
+    <name>Play! Framework Maven Test Projects : External Modules : Japid</name>
 
     <modules>
-        <module>associations</module>
-        <module>cobertura</module>
-        <module>coffee</module>
-        <module>constretto</module>
-        <module>deadbolt</module>
-        <module>ebean</module>
-        <module>excel</module>
-        <module>gae</module>
-        <module>guice</module>
-        <module>japid</module>
-        <module>less</module>
-        <module>markdown</module>
-        <module>morphia</module>
-        <module>postmark</module>
-        <module>recaptcha</module>
-        <module>sass</module>
-        <module>scala</module>
-        <module>securesocial</module>
-        <module>shibboleth</module>
-        <module>siena</module>
-        <module>spring</module>
-        <module>springtester</module>
+        <module>japid-contact</module>
+        <module>japid-sample</module>
     </modules>
 
 </project>
