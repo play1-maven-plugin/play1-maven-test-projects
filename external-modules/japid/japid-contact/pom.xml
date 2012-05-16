@@ -82,6 +82,28 @@ under the License.
                 <extensions>true</extensions>
             </plugin>
 
+            <plugin>
+                <groupId>com.google.code.maven-play-plugin</groupId>
+                <artifactId>play-japid-maven-plugin</artifactId>
+                <version>0.9.3.4-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <id>play-japid-clean</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>play-japid-gen</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>gen</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
             <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
