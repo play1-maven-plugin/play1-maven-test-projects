@@ -49,6 +49,7 @@ under the License.
         <module>less</module>
         <module>markdown</module>
         <module>morphia</module>
+        <module>pdf</module>
         <module>postmark</module>
         <module>recaptcha</module>
         <module>sass</module>
