@@ -1,0 +1,54 @@
+@import controllers.*, foo.bar.*
+@extends(main)
+@set(title:"Dynamic Tag Dispatch")
+
+<div>
+    <h2>@get("title") <small>using @@invoke</small></h2>
+</div>
+
+<table class="table code-section">
+    <thead>
+        <th class="span6">Code</th>
+        <th>Result</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <pre class="prettyprint linenums">@verbatim() {@invoke("Demo.timestamp")}</pre>
+            </td>
+            <td>
+                @invoke("Demo.timestamp")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre class="prettyprint linenums">@verbatim() {@invoke("controllers.Demo.timestamp").cache(3)}</pre>
+            </td>
+            <td>
+                @invoke("controllers.Demo.timestamp").cache(3)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre class="prettyprint linenums">@verbatim() {@{String sn1 = "facebook"; long ts1 = new Date().getTime()}
+@invoke("foo.bar." + sn1, ts1).cache("3s")}</pre>
+            </td>
+            <td>
+                @{String sn1 = "facebook"; long ts1 = new Date().getTime()}
+                @invoke("foo.bar." + sn1, ts1).cache("3s")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre class="prettyprint linenums">@verbatim() {@{String sn2 = "non_exists"; long ts2 = new Date().getTime()}
+@invoke("foo.bar." + sn2, ts2).cache("3s").ignoreNonExistsTag()}</pre>
+            </td>
+            <td>
+                @{String sn2 = "non_exists"; long ts2 = new Date().getTime()}
+                @invoke("foo.bar." + sn2, ts2).cache("3s").ignoreNonExistsTag()
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+@include("tmpl_src")

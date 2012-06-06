@@ -1,0 +1,41 @@
+@extends(main)
+@set(title:"Inline Tags")
+
+@def hello(String who) {
+    Hello @who (at @ts())
+}
+
+<div>
+    <h2>@get("title") <small>calling inline functions</small></h2>
+</div>
+
+<table class="table code-section">
+    <thead>
+        <th class="span6">Code</th>
+        <th>Result</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <pre class="prettyprint linenums">@verbatim() {@hello("Tom")}</pre>
+            </td>
+            <td>
+                @hello("Tom")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre class="prettyprint linenums">@verbatim() {@cache(3) {
+    @hello("Tom")
+}}</pre>
+            </td>
+            <td>
+                @cache(3) {
+                    @hello("Tom")
+                }
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+@include("tmpl_src")

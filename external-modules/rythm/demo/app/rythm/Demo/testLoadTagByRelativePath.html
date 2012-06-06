@@ -1,0 +1,39 @@
+@extends(main)
+@set(title:"Load Tags by Relative Path")
+
+<div>
+    <h2>@get("title") <small>tag invoke using relative path name</small></h2>
+</div>
+
+<table class="table code-section">
+    <thead>
+        <th class="span6">Code</th>
+        <th>Result</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <pre class="prettyprint linenums">@verbatim(){<p>Invoke tag using full path</p>
+@Demo.tags.bar()
+}</pre>
+            </td>
+            <td>
+                <p>Invoke tag using full path</p>
+                @Demo.tags.bar()
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre class="prettyprint linenums">@verbatim(){<p>Invoke tag using relative path</p>
+@tags.bar()
+}</pre>
+            </td>
+            <td>
+                <p>Invoke tag using relative path</p>
+                @tags.bar()
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+@include(tmpl_src)

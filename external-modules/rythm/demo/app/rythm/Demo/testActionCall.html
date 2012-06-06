@@ -1,0 +1,42 @@
+@import controllers.*
+@extends(main)
+@set(title: "Call Action Method from View")
+
+<div>
+    <h2>@get("title) <small>how to call an action method inside a view</small></h2>
+</div>
+
+<table class="table code-section">
+    <thead>
+        <th class="span6">Code</th>
+        <th>Result</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <pre class="prettyprint linenums">@verbatim() {@controllers.Demo.timestamp()}</pre>
+        </td>
+        <td>
+            @controllers.Demo.timestamp()
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pre class="prettyprint linenums">@verbatim() {@controllers.Demo.timestamp().cache(3)}</pre>
+        </td>
+        <td>
+            @controllers.Demo.timestamp().cache(3)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pre class="prettyprint linenums">@verbatim() {@Demo.timestamp()}</pre>
+        </td>
+        <td>
+            @Demo.timestamp()
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+@include(tmpl_src)
