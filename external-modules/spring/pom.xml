@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <spring.version>1.0.2</spring.version>
+        <spring.version>1.0.3</spring.version>
     </properties>
 
     <dependencies>
@@ -63,17 +63,17 @@ under the License.
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.spring</groupId>
             <artifactId>play-spring</artifactId>
             <version>${spring.version}</version>
+            <scope>provided</scope>
         </dependency>
 
-        <!-- not needed, only jar is required
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.spring</groupId>
             <artifactId>play-spring</artifactId>
             <version>${spring.version}</version>
-            <classifier>module</classifier>
+            <classifier>module-min</classifier>
             <type>zip</type>
+            <scope>provided</scope>
         </dependency>
-        -->
     </dependencies>
 
     <build>
