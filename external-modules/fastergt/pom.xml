@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <fastergt.version>1.7</fastergt.version>
+        <fastergt.version>1.7_1</fastergt.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>
     </properties>
