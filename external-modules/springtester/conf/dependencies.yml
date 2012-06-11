@@ -3,14 +3,4 @@
 require:
     - play
     - play -> spring 1.0.1
-    # When creating your own Play! application, reference springtester using:
-    #     - play -> springtester [version]
-    # The definition below and the associated repository is done to point to the source project that you have checked out.
-    - springtester -> springtester 0.1
-
-repositories:
-    - My modules:
-        type:       local
-        artifact:   "${application.path}/../../../[module]-[revision]"
-        contains:
-            - springtester
+    - play -> springtester 0.1
