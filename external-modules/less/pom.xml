@@ -22,92 +22,21 @@ under the License.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>com.google.code.maven-play-plugin</groupId>
-        <artifactId>play-app-default-parent</artifactId>
+        <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
+        <artifactId>external-modules</artifactId>
         <version>1.0.0-beta2-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules</groupId>
     <artifactId>less</artifactId>
-    <version>1.0.0-beta2-SNAPSHOT</version>
-    <packaging>play</packaging>
+    <packaging>pom</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Less</name>
 
-    <repositories>
-        <repository>
-            <id>com.google.code.maven-play-plugin</id>
-            <name>Maven Play Plugin - releases</name>
-            <url>http://maven-play-plugin.googlecode.com/svn/mavenrepo/releases</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>com.google.code.maven-play-plugin-snapshots</id>
-            <name>Maven Play Plugin - snapshots</name>
-            <url>http://maven-play-plugin.googlecode.com/svn/mavenrepo/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-        </repository>
-    </repositories>
-
-    <properties>
-        <play.seleniumSkip>true</play.seleniumSkip>
-
-        <less.version>0.9</less.version>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.less</groupId>
-            <artifactId>play-less</artifactId>
-            <version>${less.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.less</groupId>
-            <artifactId>play-less</artifactId>
-            <version>${less.version}</version>
-            <classifier>module-min</classifier>
-            <type>zip</type>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.google.code.maven-play-plugin</groupId>
-                <artifactId>play-maven-plugin</artifactId>
-                <extensions>true</extensions>
-            </plugin>
-        </plugins>
-    </build>
-
-    <profiles>
-        <profile>
-            <id>autodeps</id>
-
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.google.code.maven-play-plugin</groupId>
-                        <artifactId>play-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>play-dependencies</id>
-                                <phase>validate</phase>
-                                <goals>
-                                    <goal>dependencies</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
+    <modules>
+        <module>bootstrap-sample</module>
+        <module>less-sample</module>
+    </modules>
 
 </project>
