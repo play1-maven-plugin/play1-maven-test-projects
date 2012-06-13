@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <japid.version>0.9.3.4</japid.version>
+        <japid.version>0.9.3.7</japid.version>
     </properties>
 
     <dependencies>
@@ -85,7 +85,7 @@ under the License.
             <plugin>
                 <groupId>com.google.code.maven-play-plugin</groupId>
                 <artifactId>play-japid-maven-plugin</artifactId>
-                <version>0.9.3.4</version>
+                <version>${japid.version}</version>
                 <executions>
                     <execution>
                         <id>play-japid-clean</id>
@@ -103,16 +103,6 @@ under the License.
                     </execution>
                 </executions>
             </plugin>
-
-            <!--<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>japidviews/**</exclude>
-                    </excludes>
-                </configuration>
-            </plugin>-->
         </plugins>
     </build>
 
