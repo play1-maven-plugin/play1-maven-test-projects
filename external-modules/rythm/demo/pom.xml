@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <rythm.version>1.0.0-RC6</rythm.version>
+        <rythm.version>1.0.0-RC7</rythm.version>
         <play-gae.version>1.6.0</play-gae.version>
 
         <gae.version>1.6.2.1</gae.version>

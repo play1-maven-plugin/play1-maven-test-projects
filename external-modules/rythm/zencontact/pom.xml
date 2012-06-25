@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <rythm.version>1.0.0-RC6</rythm.version>
+        <rythm.version>1.0.0-RC7</rythm.version>
     </properties>
 
     <dependencies>
