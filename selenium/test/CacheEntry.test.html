@@ -1,0 +1,21 @@
+*{ You can use plain selenium command using the selenium tag }*
+
+#{selenium}
+    // Open the home page, and check that no error occured
+    open('/')
+
+#base operations
+    assertCacheEntry('key','value 1')
+    assertNotCacheEntry('key','value2')
+    verifyCacheEntry('key','value 1')
+    verifyNotCacheEntry('key','value2')
+    waitForCacheEntry('key','value 1')
+    waitForNotCacheEntry('key','value2')
+
+#filtering
+    assertCacheEntry('key','value$[space]1')
+
+#regexp
+    assertCacheEntry('key','regexp:value.1')
+
+#{/selenium}

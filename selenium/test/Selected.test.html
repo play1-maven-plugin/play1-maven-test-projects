@@ -1,0 +1,33 @@
+*{ You can use plain selenium command using the selenium tag }*
+
+#{selenium}
+    // Open the home page, and check that no error occured
+    open('/')
+
+#base operations
+    assertSelected('id=select2','pozycja 1')
+#    assertNotSelected('id=select2','pozycja 1')
+    verifySelected('id=select2','pozycja 1')
+#    verifyNotSelected('id=select2','pozycja 2')
+#    waitForSelected('id=select2','pozycja 1')
+#    waitForNotSelected('id=select2','pozycja 2')
+
+#filtering
+    assertSelected('id=select2','pozycja$[space]1')
+
+#regexp
+    assertSelected('id=select2','regexp:pozycja.1')
+
+#selectedLabel operations
+    assertSelectedLabel('id=select2','pozycja 1')
+    assertNotSelectedLabel('id=select2','pozycja 2')
+    verifySelectedLabel('id=select2','pozycja 1')
+    verifyNotSelectedLabel('id=select2','pozycja 2')
+    waitForSelectedLabel('id=select2','pozycja 1')
+    waitForNotSelectedLabel('id=select2','pozycja 2')
+
+    assertSelectedLabel('id=select2','pozycja$[space]1')
+
+    assertSelectedLabel('id=select2','regexp:pozycja.1')
+
+#{/selenium}

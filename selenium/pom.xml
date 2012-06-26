@@ -76,6 +76,21 @@ under the License.
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <include>**/ApplicationSeleniumTest.java</include>
+                        <!--<include>**/CacheEntrySeleniumTest.java</include>-->
+                        <!--<include>**/EqualsNotEqualsSeleniumTest.java</include>-->
+                        <!--<include>**/SelectedSeleniumTest.java</include>-->
+                        <!--<include>**/TextLikeSeleniumTest.java</include>-->
+                        <!--<include>**/*SeleniumTest.java</include>-->
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.0</version>
             </plugin>

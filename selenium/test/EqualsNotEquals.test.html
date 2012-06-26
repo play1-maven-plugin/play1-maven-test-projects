@@ -1,0 +1,23 @@
+*{ You can use plain selenium command using the selenium tag }*
+
+#{selenium}
+    // Open the home page, and check that no error occured
+    open('/')
+
+#base operations
+    assertEquals('a','a')
+    verifyEquals('a','a')
+    assertNotEquals('a','b')
+    verifyNotEquals('a','b')
+#    waitForEquals('a','a')
+#    waitForNotEquals('a','b')
+
+#filtering
+    assertEquals('a$[space]b','a b')
+    assertEquals('a b','a$[space]b')
+
+#regexp
+#    assertEquals('a b','regexp:a.b')
+   #    assertEquals('regexp:a.b','a b')
+
+#{/selenium}

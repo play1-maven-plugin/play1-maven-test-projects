@@ -1,0 +1,22 @@
+*{ You can use plain selenium command using the selenium tag }*
+
+#{selenium}
+    // Open the home page, and check that no error occured
+    open('/')
+
+#base operations
+    assertTextLike('a','b')
+    verifyTextLike('a','b')
+#    assertNotTextLike('a','a')
+#    verifyNotTextLike('a','a')
+#    waitForTextLike('a','b')
+#    waitForNotTextLike('a','a')
+
+#filtering
+    assertTextLike('a$[space]b','a a')
+    assertTextLike('a b','a$[space]a')
+
+#regexp
+    assertTextLike('a b','regexp:a.a')
+
+#{/selenium}
