@@ -13,8 +13,7 @@
     storeText('time', 'oldTime')
     pause(1100)
 	storeText('time', 'newTime')
-	//GS-command not supported yet
-        //assertNotEquals('$[oldTime]', '$[newTime]')
+        assertNotEquals('$[oldTime]', '$[newTime]')
 	
 	// Go to List page
 	clickAndWait('link=List')
