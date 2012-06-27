@@ -30,7 +30,7 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.packagings.dist.using-assembly.with-crud-module</groupId>
     <artifactId>play-1_1_x</artifactId>
-    <version>1.0.0-beta2</version>
+    <version>1.0.0-beta3-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : Packagings : Dist : Using Assembly : With CRUD Module : Play! 1.1.x</name>
