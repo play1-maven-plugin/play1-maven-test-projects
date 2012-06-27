@@ -30,7 +30,7 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
     <artifactId>selenium-with-failures</artifactId>
-    <version>1.0.0-beta2-SNAPSHOT</version>
+    <version>1.0.0-beta2</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : Selenium Integration Tests with failures</name>
