@@ -23,7 +23,7 @@ under the License.
 
     <parent>
         <groupId>com.google.code.maven-play-plugin.test-projects.packagings.war</groupId>
-        <artifactId>using-assembly</artifactId>
+        <artifactId>using-play-war</artifactId>
         <version>1.0.0-beta3-SNAPSHOT</version>
     </parent>
 
