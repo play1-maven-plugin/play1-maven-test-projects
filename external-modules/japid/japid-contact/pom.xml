@@ -86,6 +86,7 @@ under the License.
                 <groupId>com.google.code.maven-play-plugin</groupId>
                 <artifactId>play-japid-maven-plugin</artifactId>
                 <version>${japid.version}</version>
+<!--commented for release time, because it does not work in a multimodule build
                 <executions>
                     <execution>
                         <id>play-japid-clean</id>
@@ -102,6 +103,7 @@ under the License.
                         </goals>
                     </execution>
                 </executions>
+-->
             </plugin>
         </plugins>
     </build>
