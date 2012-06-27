@@ -1,6 +1,6 @@
 # Application dependencies
 
 require:
-    - play -> rythm 1.0.0-RC5
+    - play -> rythm 1.0.0-RC7
     - play -> gae 1.6.0
     - play -> secure
