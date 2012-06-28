@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <japid.version>0.9.3.7</japid.version>
+        <japid.version>0.9.4.1</japid.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>
     </properties>
