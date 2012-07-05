@@ -61,7 +61,7 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.3</play.version>
+        <play.version>1.2.3</play.version> <!-- Morphia 1.2.6a is not compatible with later Play! Framework versions -->
 
         <morphia.version>1.2.6a</morphia.version>
     </properties>
