@@ -55,7 +55,6 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.4</play.version>
         <springtester.version>0.1</springtester.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>

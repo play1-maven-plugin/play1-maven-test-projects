@@ -55,7 +55,6 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.4</play.version>
         <associations.version>1.0.1</associations.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>

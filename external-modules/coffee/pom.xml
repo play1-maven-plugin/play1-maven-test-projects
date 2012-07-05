@@ -55,7 +55,6 @@ under the License.
     </repositories>
 
     <properties>
-        <play.version>1.2.4</play.version>
         <coffee.version>1.0</coffee.version>
     </properties>
 
