@@ -30,7 +30,7 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.packagings.default.inter-app-dependency</groupId>
     <artifactId>app1</artifactId>
-    <version>1.0.0-beta3-SNAPSHOT</version>
+    <version>1.0.0-beta3</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : Packagings : Default : Inter-App Dependency : App1</name>
