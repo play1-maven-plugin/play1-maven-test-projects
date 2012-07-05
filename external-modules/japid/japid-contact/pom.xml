@@ -55,7 +55,7 @@ under the License.
     </repositories>
 
     <properties>
-        <japid.version>0.9.4.2</japid.version>
+        <japid.version>0.9.4.3</japid.version>
     </properties>
 
     <dependencies>
