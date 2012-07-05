@@ -56,7 +56,6 @@ under the License.
 
     <properties>
         <ebean.version>1.0.6</ebean.version>
-        <play.version>1.2.3</play.version> <!-- not compatible with 1.2.4, "Admin.test.html" Selenium test fails -->
 
         <selenium.test.trace>true</selenium.test.trace>
     </properties>
