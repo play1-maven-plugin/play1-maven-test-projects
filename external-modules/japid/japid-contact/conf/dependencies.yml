@@ -2,4 +2,4 @@
 
 require:
     - play
-    - play -> japid 0.9.3.4
+    - play -> japid 0.9.5
