@@ -56,7 +56,7 @@ under the License.
 
     <properties>
         <deadbolt.version>1.4.3</deadbolt.version>
-        <securesocial.version>0.2.4</securesocial.version>
+        <securesocial.version>0.2.5</securesocial.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>
     </properties>
