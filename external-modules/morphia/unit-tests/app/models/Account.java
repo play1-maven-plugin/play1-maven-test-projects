@@ -18,27 +18,32 @@ public class Account extends Model {
     @Required
     @Email
     public String email;
-    
+
+    @Column("r")
     public String region;
-    
+
     public int age;
-    
+
+    @Column("sc")
     public int score;
-    
+
+    @Column("dep")
     public String department;
+
+    public transient String foo;
 
     public Account(String login, String email) {
         this(login, email, "AU");
     }
-    
+
     public Account(String login, String email, String region) {
         this(login, email, region, "IT");
     }
-    
+
     public Account(String login, String email, String region, String department) {
         this(login, email, region, department, 50, 80);
     }
-    
+
     public Account(String login, String email, String region, String department, int age, int score) {
         this.login = login;
         this.email = email;
@@ -47,5 +52,5 @@ public class Account extends Model {
         this.age = age;
         this.score = score;
     }
-    
+
 }

@@ -2,6 +2,7 @@ import java.util.Set;
 
 import models.Account;
 
+import org.bson.types.ObjectId;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -42,7 +43,18 @@ public class AccountTest extends UnitTest {
     public void testIdAfterSaved() {
         Account acc = new Account("loginxyz", "a@a.a");
         acc.save();
-        assertNotNull(acc.getId());
+        String id = acc.getId();
+        assertNotNull(id);
+    }
+
+    @Test
+    public void testTransientField() {
+        Account acc = new Account("xxx", "a@a.com");
+        acc.foo = "bar";
+        acc.save();
+        acc = Account.find("login", "xxx").get();
+        assertNotNull(acc);
+        assertNull(acc.foo);
     }
 
     @Test
@@ -73,7 +85,7 @@ public class AccountTest extends UnitTest {
         }
         Logger.info("count2: %1$s", Account.count());
     }
-    
+
     @Test
     public void testDistinct() {
         Account a1 = new Account("loginxyz", "a@a.a");
@@ -93,5 +105,5 @@ public class AccountTest extends UnitTest {
         assertTrue(set.contains("a@a.c"));
         assertFalse(set.contains("a@a.b"));
     }
-    
+
 }

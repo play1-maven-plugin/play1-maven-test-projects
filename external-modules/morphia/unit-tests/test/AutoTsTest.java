@@ -20,12 +20,12 @@ public class AutoTsTest extends UnitTest {
         assertSame(model._getCreated(), 0L);
         assertSame(model._getModified(), 0L);
         long ts = System.currentTimeMillis();
-        Thread.sleep(100);
+        Thread.sleep(1);
         model.save();
         Logger.info("created: %1$s", model._getCreated()); 
         assertTrue(model._getCreated() >= ts);
         assertTrue(model._getModified() >= ts);
-        Thread.sleep(100);
+        Thread.sleep(1);
         ts = System.currentTimeMillis();
         model.content = "world";
         model.save();

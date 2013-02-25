@@ -24,7 +24,7 @@ public class BasicTest extends UnitTest {
     
     @Test
     public void testBug46() {
-        assertEquals(IdType.Long, MorphiaPlugin.getIdType());
+        assertEquals(IdType.LONG, MorphiaPlugin.getIdType());
     }
  
     @Test
