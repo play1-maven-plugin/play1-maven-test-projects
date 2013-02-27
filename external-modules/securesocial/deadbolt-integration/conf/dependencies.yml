@@ -2,4 +2,4 @@
 
 require:
     - play -> securesocial 0.2.6
-    - play -> deadbolt 1.4.3
+    - play -> deadbolt 1.5.4
