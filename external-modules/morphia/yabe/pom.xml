@@ -79,6 +79,7 @@ under the License.
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.morphia</groupId>
             <artifactId>play-morphia</artifactId>
             <version>${morphia.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -87,6 +88,7 @@ under the License.
             <version>${morphia.version}</version>
             <classifier>module-min</classifier>
             <type>zip</type>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
