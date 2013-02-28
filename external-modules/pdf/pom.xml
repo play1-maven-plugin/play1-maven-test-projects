@@ -34,18 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : PDF</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/pdf/</url>
 
-    <!-- PDF module not published to Maven central repository yet -->
-    <repositories>
-        <repository>
-            <id>com.google.code.maven-play-plugin</id>
-            <name>Maven Play Plugin - releases</name>
-            <url>https://maven-play-plugin.googlecode.com/svn/mavenrepo/releases</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
     <scm>
         <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/pdf/</connection>
         <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/pdf/</developerConnection>
