@@ -106,6 +106,26 @@ limitations under the License.
             </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${project.basedir}/war/WEB-INF</directory>
+                            <includes>
+                                <include>application/**</include>
+                                <include>classes/**</include>
+                                <include>framework/**</include>
+                                <include>lib/**</include>
+                                <include>resources/**</include>
+                                <include>web.xml</include>
+                            </includes>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+
+            <plugin>
                 <groupId>net.kindleit</groupId>
                 <artifactId>maven-gae-plugin</artifactId>
                 <version>0.9.2</version>
