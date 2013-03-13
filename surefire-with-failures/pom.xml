@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
     <artifactId>surefire-with-failures</artifactId>
-    <version>1.0.0-beta4-SNAPSHOT</version>
+    <version>1.0.0-beta4</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : Unit and Functional Tests with failures</name>
@@ -35,9 +35,9 @@ limitations under the License.
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire-with-failures/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire-with-failures/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire-with-failures/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire-with-failures/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/surefire-with-failures</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/surefire-with-failures</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/surefire-with-failures</url>
     </scm>
 
     <properties>

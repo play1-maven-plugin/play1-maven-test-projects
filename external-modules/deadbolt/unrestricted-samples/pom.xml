@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.deadbolt</groupId>
     <artifactId>unrestricted-samples</artifactId>
-    <version>1.0.0-beta4-SNAPSHOT</version>
+    <version>1.0.0-beta4</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Deadbolt : Unrestricted Samples</name>
@@ -35,9 +35,9 @@ limitations under the License.
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/unrestricted-samples/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/unrestricted-samples/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/unrestricted-samples/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/unrestricted-samples/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/external-modules/deadbolt/unrestricted-samples</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/external-modules/deadbolt/unrestricted-samples</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/external-modules/deadbolt/unrestricted-samples</url>
     </scm>
 
     <developers>
