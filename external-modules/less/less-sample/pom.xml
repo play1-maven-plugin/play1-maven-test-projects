@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.less</groupId>
     <artifactId>less-sample</artifactId>
-    <version>1.0.0-beta4</version>
+    <version>1.0.0-beta5-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Less : Less Sample</name>
@@ -35,9 +35,9 @@ limitations under the License.
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/less/less-sample/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/external-modules/less/less-sample</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/external-modules/less/less-sample</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/external-modules/less/less-sample</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/less/less-sample/</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/less/less-sample/</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/less/less-sample/</url>
     </scm>
 
     <developers>

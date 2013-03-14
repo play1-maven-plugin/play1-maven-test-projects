@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.rythm</groupId>
     <artifactId>zencontact</artifactId>
-    <version>1.0.0-beta4</version>
+    <version>1.0.0-beta5-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Rythm : ZenContact</name>
@@ -47,9 +47,9 @@ limitations under the License.
     </repositories>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/external-modules/rythm/zencontact</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/external-modules/rythm/zencontact</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta4/external-modules/rythm/zencontact</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/rythm/zencontact/</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/rythm/zencontact/</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/rythm/zencontact/</url>
     </scm>
 
     <developers>
