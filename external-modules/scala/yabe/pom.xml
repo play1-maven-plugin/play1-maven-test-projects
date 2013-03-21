@@ -66,6 +66,8 @@ limitations under the License.
 
     <properties>
         <play-scala.version>0.9.1</play-scala.version>
+
+        <play.seleniumSkip>true</play.seleniumSkip>
     </properties>
 
     <dependencies>
