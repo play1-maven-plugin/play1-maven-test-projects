@@ -1,1 +1,2 @@
-Run "mvn clean test -Pautodeps"
+start redis server
+run "mvn clean test -Pautodeps"
