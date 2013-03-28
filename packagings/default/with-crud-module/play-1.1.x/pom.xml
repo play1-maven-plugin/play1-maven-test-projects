@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.packagings.default.with-crud-module</groupId>
     <artifactId>play-1_1_x</artifactId>
-    <version>1.0.0-beta5-SNAPSHOT</version>
+    <version>1.0.0-beta5</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : Packagings : Default : With CRUD Module : Play! 1.1.x</name>
@@ -35,9 +35,9 @@ limitations under the License.
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/default/with-crud-module/play-1_1_x/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/default/with-crud-module/play-1_1_x/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/default/with-crud-module/play-1_1_x/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/default/with-crud-module/play-1_1_x/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta5/packagings/default/with-crud-module/play-1_1_x</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta5/packagings/default/with-crud-module/play-1_1_x</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta5/packagings/default/with-crud-module/play-1_1_x</url>
     </scm>
 
     <properties>
