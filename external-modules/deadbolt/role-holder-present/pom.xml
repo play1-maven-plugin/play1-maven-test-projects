@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.deadbolt</groupId>
     <artifactId>role-holder-present</artifactId>
-    <version>1.0.0-beta5</version>
+    <version>1.0.0-beta6-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Deadbolt : Role Holder Present</name>
@@ -35,9 +35,9 @@ limitations under the License.
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/role-holder-present/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta5/external-modules/deadbolt/role-holder-present</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta5/external-modules/deadbolt/role-holder-present</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta5/external-modules/deadbolt/role-holder-present</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/role-holder-present/</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/role-holder-present/</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/role-holder-present/</url>
     </scm>
 
     <developers>
