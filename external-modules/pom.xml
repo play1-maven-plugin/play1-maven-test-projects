@@ -43,6 +43,7 @@ limitations under the License.
         <module>fastergt</module>
         <module>gae</module>
         <module>guice</module>
+        <module>hazelcast</module>
         <module>japid</module>
         <module>less</module>
         <module>markdown</module>

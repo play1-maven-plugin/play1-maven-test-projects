@@ -1,0 +1,12 @@
+# Application dependencies
+
+require:
+    - play
+    - hazelcast -> hazelcast
+    
+repositories:
+    - local:
+        type: local
+        artifact: ${application.path}/../../dist/hazelcast-0.5.zip
+        contains:
+            - hazelcast

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Copyright 2010-2013 Grzegorz Slowikowski
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>com.google.code.maven-play-plugin</groupId>
+        <artifactId>play-app-default-parent</artifactId>
+        <version>1.0.0-beta5</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.google.code.maven-play-plugin.test-projects.external-modules</groupId>
+    <artifactId>hazelcast</artifactId>
+    <version>1.0.0-beta6-SNAPSHOT</version>
+    <packaging>play</packaging>
+
+    <name>Play! Framework Maven Test Projects : External Modules : Hazelcast</name>
+    <description>Play! Framework Maven Test Projects : External Modules : Hazelcast</description>
+    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/springtester/</url>
+
+    <scm>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/hazelcast/</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/hazelcast/</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/hazelcast/</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>gslowikowski</id>
+            <name>Grzegorz Slowikowski</name>
+            <email>gslowikowski@gmail.com</email>
+            <roles>
+                <role>Mavenizer</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+    <properties>
+        <hazelcast.version>0.6</hazelcast.version>
+
+        <play.seleniumSkip>true</play.seleniumSkip>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.hazelcast</groupId>
+            <artifactId>play-hazelcast</artifactId>
+            <version>${hazelcast.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.hazelcast</groupId>
+            <artifactId>play-hazelcast</artifactId>
+            <version>${hazelcast.version}</version>
+            <classifier>module-min</classifier>
+            <type>zip</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.google.code.maven-play-plugin</groupId>
+                <artifactId>play-maven-plugin</artifactId>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>autodeps</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.google.code.maven-play-plugin</groupId>
+                        <artifactId>play-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>play-dependencies</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>dependencies</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
