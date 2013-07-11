@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules</groupId>
     <artifactId>spring</artifactId>
-    <version>1.0.0-beta6-SNAPSHOT</version>
+    <version>1.0.0-beta6</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Spring</name>
@@ -35,9 +35,9 @@ limitations under the License.
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/spring/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/spring/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/spring/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/spring/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6/external-modules/spring</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6/external-modules/spring</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6/external-modules/spring</url>
     </scm>
 
     <developers>

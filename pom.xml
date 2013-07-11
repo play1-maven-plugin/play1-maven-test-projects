@@ -27,16 +27,16 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin</groupId>
     <artifactId>test-projects</artifactId>
-    <version>1.0.0-beta6-SNAPSHOT</version>
+    <version>1.0.0-beta6</version>
     <packaging>pom</packaging>
 
     <name>Play! Framework Maven Test Projects</name>
     <description>Play! Framework Maven Test Projects</description>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6</url>
     </scm>
 
     <modules>

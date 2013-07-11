@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.deadbolt</groupId>
     <artifactId>content-types</artifactId>
-    <version>1.0.0-beta6-SNAPSHOT</version>
+    <version>1.0.0-beta6</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Deadbolt : Content Types</name>
@@ -35,9 +35,9 @@ limitations under the License.
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/content-types/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/content-types/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/content-types/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/content-types/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6/external-modules/deadbolt/content-types</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6/external-modules/deadbolt/content-types</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6/external-modules/deadbolt/content-types</url>
     </scm>
 
     <developers>

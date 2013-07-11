@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.redis</groupId>
     <artifactId>redis-twayis</artifactId>
-    <version>1.0.0-beta6-SNAPSHOT</version>
+    <version>1.0.0-beta6</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Redis : Twayis</name>
@@ -35,9 +35,9 @@ limitations under the License.
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-twayis/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-twayis/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-twayis/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-twayis/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6/external-modules/redis/redis-twayis</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6/external-modules/redis/redis-twayis</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta6/external-modules/redis/redis-twayis</url>
     </scm>
 
     <developers>
