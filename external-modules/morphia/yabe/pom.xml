@@ -98,6 +98,9 @@ limitations under the License.
                 <groupId>com.google.code.maven-play-plugin</groupId>
                 <artifactId>play-maven-plugin</artifactId>
                 <extensions>true</extensions>
+                <configuration>
+                    <precompileFork>true</precompileFork>
+                </configuration>
             </plugin>
 
             <plugin>
