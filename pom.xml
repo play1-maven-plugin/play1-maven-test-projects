@@ -41,6 +41,7 @@ limitations under the License.
 
     <modules>
         <module>findbugs</module>
+        <module>multimodule</module>
         <module>packagings</module>
         <module>selenium</module>
         <module>selenium-with-failures</module>
