@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-Copyright 2010-2014 Grzegorz Slowikowski
+Copyright 2010-2013 Grzegorz Slowikowski
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -19,22 +19,17 @@ limitations under the License.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <groupId>com.google.code.maven-play-plugin</groupId>
-        <artifactId>test-projects</artifactId>
+        <groupId>com.google.code.maven-play-plugin.test-projects.multimodule</groupId>
+        <artifactId>jar-dependency</artifactId>
         <version>1.0.0-beta7-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
-    <artifactId>multimodule</artifactId>
-    <packaging>pom</packaging>
+    <groupId>com.google.code.maven-play-plugin.test-projects.multimodule.jar-dependency</groupId>
+    <artifactId>dep-module</artifactId>
+    <packaging>jar</packaging>
 
-    <name>Play! Framework Maven Test Projects : MultiModule</name>
-    <description>Play! Framework Maven Test Projects : MultiModule</description>
-
-    <modules>
-        <module>jar-dependency</module>
-        <module>play-module-dependency</module>
-    </modules>
+    <name>Play! Framework Maven Test Projects : MultiModule : Jar Dependency : Dependent Module</name>
+    <description>Play! Framework Maven Test Projects : MultiModule : Jar Dependency : Dependent Module</description>
 
 </project>
