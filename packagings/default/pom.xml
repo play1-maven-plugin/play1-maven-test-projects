@@ -33,7 +33,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : Packagings : Default</description>
 
     <modules>
-        <module>app-module-dependency</module>
         <module>inter-app-dependency</module>
         <module>no-dependencies</module>
         <module>with-crud-module</module>
