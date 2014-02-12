@@ -32,8 +32,8 @@ limitations under the License.
     </properties>
 
     <modules>
-        <module>main-app</module>
         <module>dep-module</module>
+        <module>main-app</module>
     </modules>
 
     <build>
