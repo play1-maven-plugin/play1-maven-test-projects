@@ -1,34 +1,69 @@
-Running "main-app" application with hot-reloading for classes from both modules ("main-app" and "dep-module").
+I. Running "main-app" application with classes from both modules ("main-app" and "dep-module")
+   without installing (mvn install) "dep-module" first. WITH hot-reloading!
+   This method is simple, but works only if there is only one Play! application in the reactor.
 
-1. Inter-module dependencies configuration. Follow these instructions to do it properly.
+  1. Inter-module dependencies configuration.
 
-mvn play:dependencies compile
+    mvn initialize play:dependencies
 
-or
+    or
 
-mvn compile -Pautodeps
-
-
-You should see:
-
-[INFO] Play! module dependency found in reactor, relative path is "../dep-module"
-
-output when executing play:dependencies goal for "main-app" module.
+    mvn initialize -Pautodeps
 
 
-2. Running main-app
+    You should see:
 
-mvn compile play:run
+    [INFO] Play! module dependency found in reactor, relative path is "../dep-module"
 
-
-3. Testing if hot reloading works
-
-Change value returned by getMessage() function of utils.Util class in "dep-module" module
-and reload application.
+    output when executing play:dependencies goal for "main-app" module.
 
 
+  2. Running main-app
 
-P.S.
-Maven "compile" phase executed for "dep-module" module before anything is executed for "main-app" module
-is required for proper "main-app" module Maven dependency resolution without installing "dep-module" module
-to local repository first.
+    mvn play:run
+
+
+II. Running "main-app" application with classes from both modules ("main-app" and "dep-module")
+    with installing (mvn install) "dep-module" first. WITH hot-reloading!
+    More complicated, does not make sense to use this method, unless there are many Play! apps
+    in the reactor.
+
+  1. Installing parent and "dep-module" modules.
+
+    mvn install --projects .,dep-module
+
+    or
+
+    mvn install -N
+    cd dep-module
+    mvn install
+    cd ..
+
+
+  2. Running "main-app".
+
+    2a. Running "main-app" for the first time (or after every "mvn clean").
+
+      mvn initialize play:run --projects main-app
+
+      or
+
+      cd main-app
+      mvn initialize play:run
+
+
+    2b. Running "main-app" after it has been initialized.
+
+      mvn play:run --projects main-app
+
+      or
+
+      cd main-app
+      mvn play:run
+
+
+
+III. Testing if hot reloading works.
+
+  Change value returned by getMessage() function of utils.Util class in "dep-module" module
+  and reload application.

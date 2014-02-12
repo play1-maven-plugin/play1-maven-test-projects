@@ -40,10 +40,6 @@ limitations under the License.
         <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/play-module-dependency/main-app/</url>
     </scm>
 
-    <properties>
-        <play.seleniumSkip>true</play.seleniumSkip>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>

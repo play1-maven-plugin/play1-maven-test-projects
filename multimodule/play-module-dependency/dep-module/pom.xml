@@ -41,10 +41,9 @@ limitations under the License.
     </scm>
 
     <properties>
-        <maven.test.skip>true</maven.test.skip>
-
-        <play.plugin.version>1.0.0-beta7-SNAPSHOT</play.plugin.version>
-        <play.seleniumSkip>true</play.seleniumSkip>
+        <!-- test are not allowed for Play! module, at least in this version of the plugin -->
+        <maven.test.skip>true</maven.test.skip> <!-- shortens build time -->
+        <play.seleniumSkip>true</play.seleniumSkip> <!-- shortens build time -->
     </properties>
 
     <build>
