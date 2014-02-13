@@ -1,6 +1,6 @@
 package utils;
 
-public class Util {
+public class AppUtil {
 
     public static String getMessage()
     {

@@ -2,13 +2,12 @@ package controllers;
 
 import play.mvc.Controller;
 
-import utils.Util;
+import utils.AppUtil;
 
 public class Application extends Controller {
 
     public static void index() {
-        Util util = new Util(); // class from "dep-module" dependency
-        String message = Util.getMessage();
+        String message = AppUtil.getMessage();
         render(message);
     }
 

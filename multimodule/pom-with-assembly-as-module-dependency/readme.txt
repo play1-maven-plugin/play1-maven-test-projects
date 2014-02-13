@@ -8,7 +8,7 @@ I. Running "main-app" application with classes from both modules ("main-app" and
 
     or
 
-    mvn initialize -Pautodeps
+    mvn compile -Pautodeps
 
 
     You should see:

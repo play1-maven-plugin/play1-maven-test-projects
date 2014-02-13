@@ -96,7 +96,6 @@ limitations under the License.
                         <configuration>
                             <descriptors>
                                 <descriptor>${basedir}/assembly-module.xml</descriptor>
-                                <descriptor>${basedir}/assembly-module-min.xml</descriptor>
                             </descriptors>
                         </configuration>
                     </execution>
