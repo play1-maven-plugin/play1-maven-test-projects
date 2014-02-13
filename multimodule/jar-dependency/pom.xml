@@ -39,23 +39,9 @@ limitations under the License.
         <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/jar-dependency/</url>
     </scm>
 
-    <properties>
-        <play.plugin.version>1.0.0-beta7-SNAPSHOT</play.plugin.version>
-    </properties>
-
     <modules>
         <module>dep-module</module>
         <module>main-app</module>
     </modules>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.google.code.maven-play-plugin</groupId>
-                <artifactId>play-maven-plugin</artifactId>
-                <version>${play.plugin.version}</version>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

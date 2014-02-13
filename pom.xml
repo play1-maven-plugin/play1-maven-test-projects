@@ -39,6 +39,10 @@ limitations under the License.
         <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/</url>
     </scm>
 
+    <properties>
+        <play.plugin.version>1.0.0-beta7-SNAPSHOT</play.plugin.version>
+    </properties>
+
     <modules>
         <module>findbugs</module>
         <module>multimodule</module>
@@ -48,6 +52,16 @@ limitations under the License.
         <module>surefire</module>
         <module>surefire-with-failures</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.google.code.maven-play-plugin</groupId>
+                <artifactId>play-maven-plugin</artifactId>
+                <version>${play.plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
 
     <profiles>
         <profile>

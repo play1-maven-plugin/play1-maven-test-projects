@@ -32,23 +32,9 @@ limitations under the License.
     <name>Play! Framework Maven Test Projects : MultiModule : Play! Module Dependency</name>
     <description>Play! Framework Maven Test Projects : MultiModule : Play! Module Dependency</description>
 
-    <properties>
-        <play.plugin.version>1.0.0-beta7-SNAPSHOT</play.plugin.version>
-    </properties>
-
     <modules>
         <module>main-app</module>
         <module>dep-module</module>
     </modules>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.google.code.maven-play-plugin</groupId>
-                <artifactId>play-maven-plugin</artifactId>
-                <version>${play.plugin.version}</version>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
