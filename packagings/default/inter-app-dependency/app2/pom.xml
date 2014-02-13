@@ -86,6 +86,7 @@ limitations under the License.
                 <extensions>true</extensions>
                 <configuration>
                     <dependenciesSkipJars>true</dependenciesSkipJars>
+                    <precompileFork>true</precompileFork>
                     <zipDependencies>true</zipDependencies>
                 </configuration>
             </plugin>
