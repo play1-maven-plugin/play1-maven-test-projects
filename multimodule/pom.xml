@@ -36,6 +36,7 @@ limitations under the License.
         <module>jar-dependency</module>
         <module>play-module-dependency</module>
         <module>pom-with-assembly-as-module-dependency</module>
+        <module>jar-with-assembly-as-module-dependency</module>
     </modules>
 
 </project>
