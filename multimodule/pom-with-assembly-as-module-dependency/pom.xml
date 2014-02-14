@@ -21,7 +21,7 @@ limitations under the License.
     <parent>
         <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
         <artifactId>multimodule</artifactId>
-        <version>1.0.0-beta7-SNAPSHOT</version>
+        <version>1.0.0-beta7</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -34,9 +34,9 @@ limitations under the License.
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/pom-with-assembly-as-module-dependency/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/pom-with-assembly-as-module-dependency/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/pom-with-assembly-as-module-dependency/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/pom-with-assembly-as-module-dependency/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta7/multimodule/pom-with-assembly-as-module-dependency</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta7/multimodule/pom-with-assembly-as-module-dependency</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/tags/test-projects-1.0.0-beta7/multimodule/pom-with-assembly-as-module-dependency</url>
     </scm>
 
     <modules>
