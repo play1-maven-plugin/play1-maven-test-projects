@@ -17,7 +17,7 @@ limitations under the License.
 -->
 
 <assembly>
-    <id>module</id>
+    <id>module-min</id>
 
     <formats>
         <format>zip</format>
@@ -32,15 +32,7 @@ limitations under the License.
             <outputDirectory></outputDirectory>
             <includes>
                 <include>app/**</include>
-                <include>src/**</include>
-                <include>test-src/**</include>
             </includes>
         </fileSet>
     </fileSets>
-
-    <files>
-        <file>
-            <source>${project.build.directory}/manifest</source>
-        </file>
-    </files>
 </assembly>
