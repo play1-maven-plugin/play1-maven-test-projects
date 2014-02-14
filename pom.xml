@@ -48,10 +48,9 @@ limitations under the License.
         <module>findbugs</module>
         <module>multimodule</module>
         <module>packagings</module>
+        <module>reporting</module>
         <module>selenium</module>
-        <module>selenium-with-failures</module>
         <module>surefire</module>
-        <module>surefire-with-failures</module>
     </modules>
 
     <build>

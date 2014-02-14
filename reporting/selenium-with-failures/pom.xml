@@ -25,23 +25,23 @@ limitations under the License.
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
-    <artifactId>surefire-with-failures</artifactId>
+    <groupId>com.google.code.maven-play-plugin.test-projects.reporting</groupId>
+    <artifactId>selenium-with-failures</artifactId>
     <version>1.0.0-beta8-SNAPSHOT</version>
     <packaging>play</packaging>
 
-    <name>Play! Framework Maven Test Projects : Unit and Functional Tests with failures</name>
-    <description>Play! Framework Maven Test Projects : Unit and Functional Tests with failures</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire-with-failures/</url>
+    <name>Play! Framework Maven Test Projects : Reporting : Selenium Integration Tests with failures</name>
+    <description>Play! Framework Maven Test Projects : Reporting : Selenium Integration Tests with failures</description>
+    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/selenium-with-failures/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire-with-failures/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire-with-failures/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire-with-failures/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/selenium-with-failures/</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/selenium-with-failures/</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/selenium-with-failures/</url>
     </scm>
 
     <properties>
-        <play.seleniumSkip>true</play.seleniumSkip>
+        <selenium.test.trace>true</selenium.test.trace>
     </properties>
 
     <build>
@@ -55,6 +55,14 @@ limitations under the License.
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
@@ -99,6 +107,12 @@ limitations under the License.
                         </reports>
                     </reportSet>
                 </reportSets>
+                <configuration>
+                    <outputName>failsafe-report</outputName>
+                    <reportsDirectories>
+                        <reportsDirectory>${project.build.directory}/failsafe-reports</reportsDirectory>
+                    </reportsDirectories>
+                </configuration>
             </plugin>
         </plugins>
     </reporting>

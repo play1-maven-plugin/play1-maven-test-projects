@@ -25,19 +25,19 @@ limitations under the License.
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
+    <groupId>com.google.code.maven-play-plugin.test-projects.reporting</groupId>
     <artifactId>findbugs</artifactId>
     <version>1.0.0-beta8-SNAPSHOT</version>
     <packaging>play</packaging>
 
-    <name>Play! Framework Maven Test Projects : FindBugs</name>
-    <description>Play! Framework Maven Test Projects : FindBugs</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/findbugs/</url>
+    <name>Play! Framework Maven Test Projects : Reporting : FindBugs</name>
+    <description>Play! Framework Maven Test Projects : Reporting : FindBugs</description>
+    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/findbugs/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/findbugs/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/findbugs/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/findbugs/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/findbugs/</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/findbugs/</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/findbugs/</url>
     </scm>
 
     <properties>
