@@ -49,8 +49,6 @@ limitations under the License.
         <module>multimodule</module>
         <module>packagings</module>
         <module>reporting</module>
-        <module>selenium</module>
-        <module>surefire</module>
     </modules>
 
     <build>

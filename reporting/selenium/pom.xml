@@ -25,23 +25,23 @@ limitations under the License.
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.google.code.maven-play-plugin.test-projects</groupId>
-    <artifactId>surefire</artifactId>
+    <groupId>com.google.code.maven-play-plugin.test-projects.reporting</groupId>
+    <artifactId>selenium</artifactId>
     <version>1.0.0-beta8-SNAPSHOT</version>
     <packaging>play</packaging>
 
-    <name>Play! Framework Maven Test Projects : Unit and Functional Tests</name>
-    <description>Play! Framework Maven Test Projects : Unit and Functional Tests</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire/</url>
+    <name>Play! Framework Maven Test Projects : Reporting : Selenium Integration Tests</name>
+    <description>Play! Framework Maven Test Projects : Reporting : Selenium Integration Tests</description>
+    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/selenium/</url>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/surefire/</url>
+        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/selenium/</connection>
+        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/selenium/</developerConnection>
+        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/selenium/</url>
     </scm>
 
     <properties>
-        <play.seleniumSkip>true</play.seleniumSkip>
+        <selenium.test.trace>true</selenium.test.trace>
     </properties>
 
     <build>
@@ -56,7 +56,22 @@ limitations under the License.
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <!--<debugForkedProcess>-Xmx1024m -XX:MaxPermSize=256m -Xdebug -Xrunjdwp:transport=dt_socket,address=8001,server=y,suspend=y</debugForkedProcess>-->
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <include>**/ApplicationSeleniumTest.java</include>
+                        <!--<include>**/CacheEntrySeleniumTest.java</include>-->
+                        <!--<include>**/EqualsNotEqualsSeleniumTest.java</include>-->
+                        <!--<include>**/SelectedSeleniumTest.java</include>-->
+                        <!--<include>**/TextLikeSeleniumTest.java</include>-->
+                        <!--<include>**/*SeleniumTest.java</include>-->
+                    </includes>
                 </configuration>
             </plugin>
 
@@ -89,7 +104,7 @@ limitations under the License.
                 <reportSets>
                     <reportSet>
                         <reports>
-                            <report>report-only</report>
+                            <report>failsafe-report-only</report>
                         </reports>
                     </reportSet>
                 </reportSets>
