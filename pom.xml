@@ -41,7 +41,7 @@ limitations under the License.
     </scm>
 
     <properties>
-        <play.plugin.version>1.0.0-beta7-SNAPSHOT</play.plugin.version>
+        <play.plugin.version>1.0.0-beta7</play.plugin.version>
     </properties>
 
     <modules>
