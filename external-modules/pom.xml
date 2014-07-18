@@ -47,6 +47,7 @@ limitations under the License.
         <module>japid</module>
         <module>less</module>
         <module>markdown</module>
+        <module>messages</module>
         <module>morphia</module>
         <module>pdf</module>
         <module>postmark</module>
