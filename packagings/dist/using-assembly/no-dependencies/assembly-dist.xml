@@ -28,7 +28,6 @@
         <dependencySet>
             <scope>provided</scope>
             <outputDirectory>framework</outputDirectory>
-            <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
             <includes>
                 <include>com.google.code.maven-play-plugin.org.playframework:play:jar</include>
             </includes>
