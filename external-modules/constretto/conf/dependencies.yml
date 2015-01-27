@@ -2,13 +2,4 @@
 
 require:
     - play
-    - constretto -> constretto
-
-repositories:
-    - Local modules:
-        type:       local
-        artifact:   ${application.path}/../[module]
-        contains:
-            - constretto
-
-
+    - play -> constretto 0.1.1

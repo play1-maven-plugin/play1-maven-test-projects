@@ -2,11 +2,4 @@
 
 require:
     - play
-    - faster-groovy-templates -> faster-groovy-templates
-
-repositories:
-    - My modules:
-        type:       local
-        artifact:   ${application.path}/../../../[module]
-        contains:
-            - faster-groovy-templates
+    - play -> fastergt 1.7_1

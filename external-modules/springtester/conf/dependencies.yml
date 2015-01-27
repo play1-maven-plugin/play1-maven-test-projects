@@ -2,5 +2,5 @@
 
 require:
     - play
-    - play -> spring 1.0.1
+    - play -> spring 1.0.3
     - play -> springtester 0.1

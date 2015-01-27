@@ -95,7 +95,7 @@
             <unpack>true</unpack>
         </dependencySet>
 
-        <!-- Play! TestRunner module if someone wants to run the tests; only for Play! 1.2.x -->
+        <!-- Play! TestRunner module if someone wants to run the tests; only for Play! 1.2.x and 1.3.x -->
         <!-- DOES NOT WORK
         <dependencySet>
             <scope>provided</scope>

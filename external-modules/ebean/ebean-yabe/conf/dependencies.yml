@@ -1,0 +1,7 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> crud
+    - play -> secure
+    - play -> ebean 1.0.6

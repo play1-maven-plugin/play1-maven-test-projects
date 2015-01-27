@@ -53,6 +53,7 @@ limitations under the License.
     </developers>
 
     <properties>
+        <spring.version>1.0.3</spring.version>
         <springtester.version>0.1</springtester.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>
@@ -60,12 +61,25 @@ limitations under the License.
 
     <dependencies>
         <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.spring</groupId>
+            <artifactId>play-spring</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.maven-play-plugin.org.playframework.modules.spring</groupId>
+            <artifactId>play-spring</artifactId>
+            <version>${spring.version}</version>
+            <classifier>module-min</classifier>
+            <type>zip</type>
+        </dependency>
+
+        <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.springtester</groupId>
             <artifactId>play-springtester</artifactId>
             <version>${springtester.version}</version>
         </dependency>
 
-        <!-- not needed
         <dependency>
             <groupId>com.google.code.maven-play-plugin.org.playframework.modules.springtester</groupId>
             <artifactId>play-springtester</artifactId>
@@ -73,7 +87,6 @@ limitations under the License.
             <classifier>module-min</classifier>
             <type>zip</type>
         </dependency>
-        -->
     </dependencies>
 
     <build>
@@ -119,6 +132,23 @@ limitations under the License.
                     </plugin>
                 </plugins>
             </build>
+        </profile>
+
+        <profile>
+            <id>play13</id>
+
+            <properties>
+                <play.version>1.3.0</play.version>
+            </properties>
+
+            <dependencies>
+                <dependency>
+                    <groupId>com.google.code.maven-play-plugin.org.playframework.modules.docviewer</groupId>
+                    <artifactId>play-docviewer</artifactId>
+                    <version>${play.version}</version>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
         </profile>
     </profiles>
 

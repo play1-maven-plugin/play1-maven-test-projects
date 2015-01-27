@@ -104,4 +104,14 @@ limitations under the License.
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>play13</id>
+
+            <properties>
+                <play.version>1.3.0</play.version>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>

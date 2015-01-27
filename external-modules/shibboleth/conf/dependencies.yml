@@ -2,3 +2,4 @@
 
 require:
     - play
+    - play -> shibboleth 1.2

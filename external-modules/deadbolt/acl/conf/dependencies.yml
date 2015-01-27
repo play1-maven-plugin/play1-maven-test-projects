@@ -1,0 +1,6 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> secure
+    - play -> deadbolt 1.5.4

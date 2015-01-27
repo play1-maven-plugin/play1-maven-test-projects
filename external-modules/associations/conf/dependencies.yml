@@ -3,4 +3,4 @@
 require:
     - play
     - play -> crud
-    - play -> associations 1.0
+    - play -> associations 1.0.1

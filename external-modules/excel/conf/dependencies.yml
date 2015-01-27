@@ -1,2 +1,5 @@
+# Application dependencies
+
 require:
-    - play -> excel trunk
+    - play
+    - play -> excel 1.2.3
