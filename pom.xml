@@ -18,13 +18,6 @@ limitations under the License.
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <parent>
-        <groupId>com.google.code.maven-play-plugin</groupId>
-        <artifactId>maven-parent</artifactId>
-        <version>1.0.0-beta7</version>
-        <relativePath>../maven-parent</relativePath>
-    </parent>
-
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin</groupId>
     <artifactId>test-projects</artifactId>
@@ -35,12 +28,20 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects</description>
 
     <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/</url>
+        <connection>scm:git:git://github.com/play1-maven-plugin/play1-maven-test-projects.git</connection>
+        <developerConnection>scm:git:git@github.com:play1-maven-plugin/play1-maven-test-projects.git</developerConnection>
+        <url>https://github.com/play1-maven-plugin/play1-maven-test-projects/tree/${project.scm.tag}</url>
+        <tag>HEAD</tag>
     </scm>
 
+    <ciManagement>
+        <system>Travis CI</system>
+        <url>https://travis-ci.org/play1-maven-plugin/play1-maven-test-projects</url>
+    </ciManagement>
+
     <properties>
+        <release.plugin.version>2.5.3</release.plugin.version>
+
         <play.plugin.version>1.0.0-beta7</play.plugin.version>
     </properties>
 
@@ -52,13 +53,25 @@ limitations under the License.
     </modules>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>com.google.code.maven-play-plugin</groupId>
-                <artifactId>play-maven-plugin</artifactId>
-                <version>${play.plugin.version}</version>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.google.code.maven-play-plugin</groupId>
+                    <artifactId>play-maven-plugin</artifactId>
+                    <version>${play.plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>${release.plugin.version}</version>
+                    <configuration>
+                        <arguments>-Pwith-external-modules</arguments>
+                        <autoVersionSubmodules>true</autoVersionSubmodules>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
 
     <profiles>
@@ -68,54 +81,6 @@ limitations under the License.
             <modules>
                 <module>external-modules</module>
             </modules>
-        </profile>
-
-        <profile>
-            <id>sonatype-oss-release</id> <!-- org.sonatype.oss:oss-parent:7 (parent) defined profile - disabled plugin executions, test-projects will not be released -->
-
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>attach-sources</id>
-                                <phase>xxx</phase>
-                                <!-- no "skip" parameter
-                                <configuration>
-                                    <skip>true</skip>
-                                </configuration>
-                                -->
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>attach-javadocs</id>
-                                <configuration>
-                                    <skip>true</skip>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <configuration>
-                                    <skip>true</skip>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
         </profile>
     </profiles>
 
