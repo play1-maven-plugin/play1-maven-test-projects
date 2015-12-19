@@ -9,6 +9,6 @@ install:
   - mvn --version
 
 script:
-  - mvn verify -Dplay.seleniumSkip -Pautodeps --update-snapshots --settings .travis.settings.xml -e
+  - mvn verify -Dplay.seleniumSkip -Pautodeps,dist,play13 --update-snapshots --settings .travis.settings.xml -e
 
 jdk: oraclejdk7
