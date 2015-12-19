@@ -8,8 +8,8 @@ dependencies:
   override:
     - java -XX:+PrintFlagsFinal -version
     - mvn --version
-    - mvn test-compile --fail-never --update-snapshots --settings .travis.settings.xml -e
+    - mvn test-compile -Pautodeps --fail-never --update-snapshots --settings .travis.settings.xml -e
 
 test:
   override: 
-    - mvn verify -Dplay.seleniumSkip --settings .travis.settings.xml -e
+    - mvn verify -Dplay.seleniumSkip -Pautodeps --settings .travis.settings.xml -e
