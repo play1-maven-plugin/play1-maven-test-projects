@@ -46,7 +46,6 @@ limitations under the License.
     </properties>
 
     <modules>
-        <module>findbugs</module>
         <module>multimodule</module>
         <module>packagings</module>
         <module>reporting</module>
