@@ -1,5 +1,9 @@
 language: java
 
+services:
+  - mongodb
+  - redis-server
+
 cache:
   directories:
     - $HOME/.m2
