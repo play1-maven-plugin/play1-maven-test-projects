@@ -53,10 +53,9 @@ limitations under the License.
     </developers>
 
     <properties>
-        <maven.test.skip>true</maven.test.skip> <!-- temporarily -->
         <morphia.version>1.2.12</morphia.version>
 
-        <play.seleniumSkip>true</play.seleniumSkip> <!-- both Selenium tests don't work in this version -->
+        <play.seleniumSkip>true</play.seleniumSkip> <!-- Selenium tests don't work because of morphiaFixture.tag problem (line 11 - 'play.test.Fixtures' class cannot be used to load models) -->
     </properties>
 
     <dependencies>
@@ -99,17 +98,6 @@ limitations under the License.
                 <extensions>true</extensions>
                 <configuration>
                     <precompileFork>true</precompileFork>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>BasicTest.java</exclude>
-                        <exclude>**/*SeleniumTest.java</exclude>
-                    </excludes>
                 </configuration>
             </plugin>
         </plugins>

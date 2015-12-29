@@ -53,8 +53,7 @@ limitations under the License.
     </developers>
 
     <properties>
-        <maven.test.skip>true</maven.test.skip> <!-- temporarily -->
-        <play.seleniumSkip>true</play.seleniumSkip>
+        <play.seleniumSkip>true</play.seleniumSkip> <!-- no Selenium tests -->
 
         <morphia.version>1.2.12</morphia.version>
     </properties>
