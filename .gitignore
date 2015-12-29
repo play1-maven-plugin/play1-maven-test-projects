@@ -1,7 +1,11 @@
 .settings/
+lib/
 logs/
+modules/
 precompiled/
 target/
+test-result/
+tmp/
 .cache
 .classpath
 .project
