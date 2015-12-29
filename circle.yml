@@ -9,8 +9,8 @@ dependencies:
     - java -XX:+PrintFlagsFinal -version
     - mvn --version
     - mongod --version
-    - mvn verify -Dmaven.test.skip -Dplay.seleniumSkip -Pautodeps,dist,play13,with-external-modules --fail-never --update-snapshots --settings .travis.settings.xml -e
+    - mvn verify -Dmaven.test.skip -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,dist,play13,with-external-modules --fail-never --update-snapshots --settings .travis.settings.xml -e
 
 test:
   override: 
-    - mvn verify -Dplay.seleniumSkip -Pautodeps,dist,play13,with-external-modules --settings .travis.settings.xml -e
+    - mvn verify -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,dist,play13,with-external-modules --settings .travis.settings.xml -e

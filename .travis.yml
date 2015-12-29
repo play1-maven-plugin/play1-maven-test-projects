@@ -14,6 +14,6 @@ install:
   - mongod --version
 
 script:
-  - mvn verify -Dplay.seleniumSkip -Pautodeps,dist,play13,with-external-modules --update-snapshots --settings .travis.settings.xml -e
+  - mvn verify -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,dist,play13,with-external-modules --update-snapshots --settings .travis.settings.xml -e
 
 jdk: oraclejdk7
