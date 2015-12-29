@@ -11,6 +11,7 @@ cache:
 install:
   - java -XX:+PrintFlagsFinal -version
   - mvn --version
+  - mongod --version
 
 script:
   - mvn verify -Dplay.seleniumSkip -Pautodeps,dist,play13,with-external-modules --update-snapshots --settings .travis.settings.xml -e
