@@ -39,10 +39,35 @@ limitations under the License.
         <url>https://travis-ci.org/play1-maven-plugin/play1-maven-test-projects</url>
     </ciManagement>
 
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/play1-maven-plugin/play1-maven-test-projects/issues/</url>
+    </issueManagement>
+
+    <developers>
+        <developer>
+            <id>gslowikowski</id>
+            <name>Grzegorz Slowikowski</name>
+            <email>gslowikowski@gmail.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
     <properties>
         <release.plugin.version>2.5.3</release.plugin.version>
 
-        <play.plugin.version>1.0.0-beta7</play.plugin.version>
+        <play.plugin.version>1.0.0-beta8-SNAPSHOT</play.plugin.version>
     </properties>
 
     <modules>
