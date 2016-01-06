@@ -24,6 +24,11 @@ limitations under the License.
         <version>1.4</version>
     </skin>
 
+    <bannerRight>
+        <name>avatar</name>
+        <src>images/my-avatar-80.png</src>
+    </bannerRight>
+
     <custom>
         <fluidoSkin>
             <topBarEnabled>false</topBarEnabled>
@@ -33,5 +38,11 @@ limitations under the License.
             <bodyColumnClass>span9</bodyColumnClass>
         </fluidoSkin>
     </custom>
+
+    <body>
+        <head>
+            <link rel="stylesheet" href="./css/site.css" type="text/css" />
+        </head>
+    </body>
 
 </project>
