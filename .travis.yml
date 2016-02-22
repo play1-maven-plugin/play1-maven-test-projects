@@ -12,6 +12,7 @@ install:
   - java -XX:+PrintFlagsFinal -version
   - mvn --version
   - mongod --version
+  - export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=64m -XX:MaxPermSize=256m"
 
 before_script:
   - export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=64m -XX:MaxPermSize=256m"
