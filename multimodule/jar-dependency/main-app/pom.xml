@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : MultiModule : Jar Dependency : Main Application</name>
     <description>Play! Framework Maven Test Projects : MultiModule : Jar Dependency : Main Application</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/jar-dependency/main-app/</url>
 
     <!--<properties>
         <play.seleniumSkip>true</play.seleniumSkip>

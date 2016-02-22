@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Guice : Using Abstract Module without an Injector</name>
     <description>Play! Framework Maven Test Projects : External Modules : Guice : Using Abstract Module without an Injector</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/guice/guice-using-abstract-module-without-an-injector/</url>
 
     <developers>
         <developer>

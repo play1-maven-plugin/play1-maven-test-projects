@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Morphia : Unit Tests</name>
     <description>Play! Framework Maven Test Projects : External Modules : Morphia : Unit Tests</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/morphia/unit-tests/</url>
 
     <developers>
         <developer>

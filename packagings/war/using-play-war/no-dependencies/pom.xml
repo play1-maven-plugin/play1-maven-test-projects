@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : Packagings : WAR : Using play:war : No Dependencies</name>
     <description>Play! Framework Maven Test Projects : Packagings : WAR : Using play:war : No Dependencies</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/war/using-play-war/no-dependencies/</url>
 
     <properties>
         <play.seleniumSkip>true</play.seleniumSkip>

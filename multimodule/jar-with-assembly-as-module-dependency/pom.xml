@@ -31,7 +31,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : MultiModule : Jar with Assembly as Module Dependency</name>
     <description>Play! Framework Maven Test Projects : MultiModule : Jar with Assembly as Module Dependency</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/jar-with-assembly-as-module-dependency/</url>
 
     <modules>
         <module>dep-module</module>

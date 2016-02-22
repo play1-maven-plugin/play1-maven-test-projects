@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : Packagings : Default : Inter-App Dependency : App1</name>
     <description>Play! Framework Maven Test Projects : Packagings : Default : Inter-App Dependency : App1</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/default/inter-app-dependency/app1/</url>
 
     <properties>
         <play.seleniumSkip>true</play.seleniumSkip>

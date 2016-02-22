@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Deadbolt : Role Holder Present</name>
     <description>Play! Framework Maven Test Projects : External Modules : Deadbolt : Role Holder Present</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/role-holder-present/</url>
 
     <developers>
         <developer>

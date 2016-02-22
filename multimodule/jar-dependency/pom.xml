@@ -31,7 +31,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : MultiModule : Jar Dependency</name>
     <description>Play! Framework Maven Test Projects : MultiModule : Jar Dependency</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/jar-dependency/</url>
 
     <modules>
         <module>dep-module</module>

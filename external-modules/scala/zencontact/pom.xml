@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Scala : Zencontact</name>
     <description>Play! Framework Maven Test Projects : External Modules : Scala : Zencontact</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/scala/zencontact/</url>
 
     <!-- Scala module not published to Maven central repository yet -->
     <repositories>

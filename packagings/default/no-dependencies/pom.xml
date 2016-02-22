@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : Packagings : Default : No Dependencies</name>
     <description>Play! Framework Maven Test Projects : Packagings : Default : No Dependencies</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/default/no-dependencies/</url>
 
     <properties>
         <play.seleniumSkip>true</play.seleniumSkip>

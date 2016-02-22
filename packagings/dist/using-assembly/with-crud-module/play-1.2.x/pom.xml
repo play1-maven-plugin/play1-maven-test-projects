@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : Packagings : Dist : Using Assembly : With CRUD Module : Play! 1.2.x</name>
     <description>Play! Framework Maven Test Projects : Packagings : Dist : Using Assembly : With CRUD Module : Play! 1.2.x</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/dist/using-assembly/with-crud-module/play-1_2_x/</url>
 
     <properties>
         <assembly.descriptor>assembly-dist.xml</assembly.descriptor>

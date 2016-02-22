@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : Reporting : FindBugs</name>
     <description>Play! Framework Maven Test Projects : Reporting : FindBugs</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/findbugs/</url>
 
     <properties>
         <play.seleniumSkip>true</play.seleniumSkip>

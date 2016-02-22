@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Guice : Using Binding Annotation</name>
     <description>Play! Framework Maven Test Projects : External Modules : Guice : Using Binding Annotation</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/guice/guice-using-binding-annotation/</url>
 
     <developers>
         <developer>

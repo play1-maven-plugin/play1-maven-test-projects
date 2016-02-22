@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Cobertura</name>
     <description>Play! Framework Maven Test Projects : External Modules : Cobertura</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/cobertura/</url>
 
     <developers>
         <developer>

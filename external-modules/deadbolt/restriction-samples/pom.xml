@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Deadbolt : Restriction Samples</name>
     <description>Play! Framework Maven Test Projects : External Modules : Deadbolt : Restriction Samples</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/restriction-samples/</url>
 
     <developers>
         <developer>

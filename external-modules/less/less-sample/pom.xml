@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Less : Less Sample</name>
     <description>Play! Framework Maven Test Projects : External Modules : Less : Less Sample</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/less/less-sample/</url>
 
     <developers>
         <developer>

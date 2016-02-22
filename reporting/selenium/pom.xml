@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : Reporting : Selenium Integration Tests</name>
     <description>Play! Framework Maven Test Projects : Reporting : Selenium Integration Tests</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/selenium/</url>
 
     <properties>
         <selenium.test.trace>true</selenium.test.trace>

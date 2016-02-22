@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Scala : Play with Scala</name>
     <description>Play! Framework Maven Test Projects : External Modules : Scala : Play with Scala</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/scala/play-with-scala/</url>
 
     <!-- Scala module not published to Maven central repository yet -->
     <repositories>

@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Excel</name>
     <description>Play! Framework Maven Test Projects : External Modules : Excel</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/excel/</url>
 
     <developers>
         <developer>

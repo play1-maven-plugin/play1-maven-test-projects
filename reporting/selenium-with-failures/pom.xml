@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : Reporting : Selenium Integration Tests with failures</name>
     <description>Play! Framework Maven Test Projects : Reporting : Selenium Integration Tests with failures</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/selenium-with-failures/</url>
 
     <properties>
         <selenium.test.trace>true</selenium.test.trace>

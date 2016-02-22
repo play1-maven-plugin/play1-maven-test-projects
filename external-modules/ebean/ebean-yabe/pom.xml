@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Ebean : Ebean YABE</name>
     <description>Play! Framework Maven Test Projects : External Modules : Ebean : Ebean YABE</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/ebean/ebean-yabe/</url>
 
     <developers>
         <developer>

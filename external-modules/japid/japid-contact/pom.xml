@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Japid : JapidContact</name>
     <description>Play! Framework Maven Test Projects : External Modules : Japid : JapidContact</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/japid/japid-contact/</url>
 
     <developers>
         <developer>

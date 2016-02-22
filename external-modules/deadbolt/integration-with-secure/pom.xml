@@ -32,7 +32,6 @@ limitations under the License.
 
     <name>Play! Framework Maven Test Projects : External Modules : Deadbolt : Integration with Secure</name>
     <description>Play! Framework Maven Test Projects : External Modules : Deadbolt : Integration with Secure</description>
-    <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/deadbolt/integration-with-secure/</url>
 
     <properties>
         <deadbolt.version>1.5.4</deadbolt.version>
