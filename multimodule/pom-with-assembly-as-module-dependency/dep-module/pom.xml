@@ -37,7 +37,7 @@ limitations under the License.
         <play.manifest.specification.title>depmodule</play.manifest.specification.title>
         <play.module.frameworkVersions>1.2.x</play.module.frameworkVersions>
 
-        <play.version>1.2.7</play.version>
+        <play.version>1.2.7.2</play.version>
 
         <antrun.plugin.version>1.8</antrun.plugin.version>
         <assembly.plugin.version>2.6</assembly.plugin.version>
