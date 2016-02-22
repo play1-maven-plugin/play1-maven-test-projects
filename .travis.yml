@@ -14,9 +14,9 @@ install:
   - mongod --version
 
 before_script:
-  - export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=64m -XX:MaxPermSize=256m"
+  - export MAVEN_OPTS="-Xms512m -Xmx1536m -XX:PermSize=64m -XX:MaxPermSize=256m"
 
 script:
-  - mvn verify -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,dist,play13,with-external-modules --update-snapshots --settings .travis.settings.xml -e -Dgae.plugin.version=0.9.2 -Dantrun.plugin.version=1.7 -Dbuild-helper-maven-plugin.plugin.version=1.8 -Dassembly.plugin.version=2.4 -Dsite.plugin.version=3.3 -Djxr.plugin.version=2.3 -Dfindbugs.plugin.version=2.5.2
+  - mvn verify -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,dist,play13,with-external-modules --update-snapshots --settings .travis.settings.xml -e
 
 jdk: oraclejdk7
