@@ -38,12 +38,6 @@ limitations under the License.
         <play.seleniumSkip>true</play.seleniumSkip>
     </properties>-->
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/jar-dependency/main-app/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/jar-dependency/main-app/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/jar-dependency/main-app/</url>
-    </scm>
-
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>

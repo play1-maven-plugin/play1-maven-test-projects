@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : Redis : Twayis</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-twayis/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-twayis/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-twayis/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-twayis/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

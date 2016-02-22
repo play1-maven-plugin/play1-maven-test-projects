@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : Reporting : Unit and Functional Tests</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/surefire/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/surefire/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/surefire/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/reporting/surefire/</url>
-    </scm>
-
     <properties>
         <play.seleniumSkip>true</play.seleniumSkip>
 

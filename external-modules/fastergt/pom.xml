@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : Faster Groovy Templates</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/fastergt/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/fastergt/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/fastergt/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/fastergt/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

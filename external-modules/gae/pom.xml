@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : GAE</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/gae/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/gae/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/gae/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/gae/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

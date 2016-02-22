@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : Coffee</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/coffee/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/coffee/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/coffee/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/coffee/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

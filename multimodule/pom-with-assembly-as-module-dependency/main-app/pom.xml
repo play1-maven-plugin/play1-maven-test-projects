@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : MultiModule : POM with Assembly as Module Dependency : Main Application</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/pom-with-assembly-as-module-dependency/main-app/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/pom-with-assembly-as-module-dependency/main-app/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/pom-with-assembly-as-module-dependency/main-app/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/pom-with-assembly-as-module-dependency/main-app/</url>
-    </scm>
-
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>

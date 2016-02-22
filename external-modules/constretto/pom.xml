@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : Constretto</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/constretto/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/constretto/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/constretto/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/constretto/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

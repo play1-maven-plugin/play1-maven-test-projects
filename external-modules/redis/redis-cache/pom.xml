@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : Redis : Cache</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-cache/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-cache/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-cache/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/redis/redis-cache/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

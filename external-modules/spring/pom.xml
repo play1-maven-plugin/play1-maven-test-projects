@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : Spring</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/spring/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/spring/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/spring/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/spring/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

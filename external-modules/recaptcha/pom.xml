@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : Recaptcha</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/recaptcha/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/recaptcha/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/recaptcha/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/recaptcha/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : Packagings : Dist : Using play:dist : No Dependencies</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/dist/using-play-dist/no-dependencies/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/dist/using-play-dist/no-dependencies/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/dist/using-play-dist/no-dependencies/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/packagings/dist/using-play-dist/no-dependencies/</url>
-    </scm>
-
     <properties>
         <play.seleniumSkip>true</play.seleniumSkip>
     </properties>

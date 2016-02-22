@@ -46,12 +46,6 @@ limitations under the License.
         </repository>
     </repositories>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/rythm/demo/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/rythm/demo/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/rythm/demo/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

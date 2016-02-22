@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : Sass</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/sass/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/sass/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/sass/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/sass/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

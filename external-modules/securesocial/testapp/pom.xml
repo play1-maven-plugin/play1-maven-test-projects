@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : External Modules : SecureSocial : TestApp</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/securesocial/testapp/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/securesocial/testapp/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/securesocial/testapp/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/external-modules/securesocial/testapp/</url>
-    </scm>
-
     <developers>
         <developer>
             <id>gslowikowski</id>

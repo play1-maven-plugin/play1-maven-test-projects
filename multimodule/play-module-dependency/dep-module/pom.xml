@@ -34,12 +34,6 @@ limitations under the License.
     <description>Play! Framework Maven Test Projects : MultiModule : Play! Module Dependency : Dependent Module</description>
     <url>https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/play-module-dependency/dep-module/</url>
 
-    <scm>
-        <connection>scm:svn:http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/play-module-dependency/dep-module/</connection>
-        <developerConnection>scm:svn:https://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/play-module-dependency/dep-module/</developerConnection>
-        <url>http://maven-play-plugin.googlecode.com/svn/trunk/test-projects/multimodule/play-module-dependency/dep-module/</url>
-    </scm>
-
     <properties>
         <!-- test are not allowed for Play! module, at least in this version of the plugin -->
         <maven.test.skip>true</maven.test.skip> <!-- shortens build time -->
