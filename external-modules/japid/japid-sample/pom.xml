@@ -56,6 +56,8 @@ limitations under the License.
         <japid.version>0.9.5</japid.version>
 
         <play.seleniumSkip>true</play.seleniumSkip>
+
+        <japid.plugin.version>0.9.5_1</japid.plugin.version>
     </properties>
 
     <dependencies>
@@ -85,8 +87,7 @@ limitations under the License.
             <plugin>
                 <groupId>com.google.code.maven-play-plugin</groupId>
                 <artifactId>play-japid-maven-plugin</artifactId>
-                <!--<version>${japid.version}</version>-->
-                <version>0.9.5_1</version>
+                <version>${japid.plugin.version}</version>
                 <executions>
                     <execution>
                         <id>play-japid-clean</id>

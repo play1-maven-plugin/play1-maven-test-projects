@@ -70,6 +70,8 @@ limitations under the License.
 
         <gae.version>1.6.2.1</gae.version>
         <!--<gae.home>d:/java/appengine-java-sdk-1.6.2.1</gae.home>-->
+
+        <gae.plugin.version>0.9.6</gae.plugin.version>
     </properties>
 
     <dependencies>
@@ -125,7 +127,7 @@ limitations under the License.
             <plugin>
                 <groupId>net.kindleit</groupId>
                 <artifactId>maven-gae-plugin</artifactId>
-                <version>0.9.2</version>
+                <version>${gae.plugin.version}</version>
                 <configuration>
                     <serverId>appengine.google.com</serverId>
                     <!--<sdkDir>${appengine.sdk.root}</sdkDir>-->

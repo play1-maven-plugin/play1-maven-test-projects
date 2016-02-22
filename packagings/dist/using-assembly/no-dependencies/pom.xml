@@ -44,6 +44,8 @@ limitations under the License.
         <assembly.descriptor>assembly-dist.xml</assembly.descriptor>
 
         <play.seleniumSkip>true</play.seleniumSkip>
+
+        <assembly.plugin.version>2.6</assembly.plugin.version>
     </properties>
 
     <dependencies>
@@ -112,7 +114,7 @@ limitations under the License.
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-assembly-plugin</artifactId>
-                        <version>2.4</version>
+                        <version>${assembly.plugin.version}</version>
                         <configuration>
                             <descriptors>
                                 <descriptor>${basedir}/${assembly.descriptor}</descriptor>

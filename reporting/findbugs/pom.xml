@@ -42,6 +42,11 @@ limitations under the License.
 
     <properties>
         <play.seleniumSkip>true</play.seleniumSkip>
+
+        <findbugs.plugin.version>3.0.3</findbugs.plugin.version>
+        <jxr.plugin.version>2.5</jxr.plugin.version>
+        <project-info-reports.plugin.version>2.8.1</project-info-reports.plugin.version>
+        <site.plugin.version>3.4</site.plugin.version>
     </properties>
 
     <build>
@@ -55,7 +60,7 @@ limitations under the License.
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
-                <version>3.3</version>
+                <version>${site.plugin.version}</version>
             </plugin>
         </plugins>
     </build>
@@ -65,7 +70,7 @@ limitations under the License.
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <version>2.3</version>
+                <version>${jxr.plugin.version}</version>
                 <configuration>
                     <linkJavadoc>false</linkJavadoc>
                 </configuration>
@@ -74,7 +79,7 @@ limitations under the License.
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>2.7</version>
+                <version>${project-info-reports.plugin.version}</version>
                 <reportSets>
                     <reportSet>
                         <reports>
@@ -87,7 +92,7 @@ limitations under the License.
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
-                <version>2.5.2</version>
+                <version>${findbugs.plugin.version}</version>
                 <configuration>
                     <effort>High</effort>
                     <includeTests>true</includeTests>
