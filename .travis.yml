@@ -12,12 +12,11 @@ install:
   - java -XX:+PrintFlagsFinal -version
   - mvn --version
   - mongod --version
-  - export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=64m -XX:MaxPermSize=256m"
 
 before_script:
   - export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=64m -XX:MaxPermSize=256m"
 
 script:
-  - mvn verify -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,dist,play13,with-external-modules --update-snapshots --settings .travis.settings.xml -e
+  - mvn verify -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,dist,play13,with-external-modules --update-snapshots --settings .travis.settings.xml -X
 
 jdk: oraclejdk7
