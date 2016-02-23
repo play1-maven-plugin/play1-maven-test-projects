@@ -14,9 +14,9 @@ install:
   - mongod --version
 
 before_script:
-  - export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:PermSize=64m -XX:MaxPermSize=256m"
+  - echo "MAVEN_OPTS='-Xms512m -Xmx1024m -XX:PermSize=64m -XX:MaxPermSize=256m'" > ~/.mavenrc
 
 script:
-  - mvn verify -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,-dist,play13,with-external-modules --update-snapshots --settings .travis.settings.xml -e
+  - mvn verify -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,dist,play13,with-external-modules --update-snapshots --settings .travis.settings.xml -e
 
 jdk: oraclejdk7
