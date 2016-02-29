@@ -13,4 +13,4 @@ dependencies:
 
 test:
   override: 
-    - mvn verify -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,dist,play13,with-external-modules --settings .travis.settings.xml -e
+    - mvn verify -Dplay.seleniumSkip -Dplay.dependenciesSkipJars -Pautodeps,dist,play13,with-external-modules --settings .travis.settings.xml -e 
