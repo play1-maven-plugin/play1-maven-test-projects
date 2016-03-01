@@ -1,5 +1,0 @@
-# Application dependencies
-
-require:
-    - play
-    - play -> rythm 1.0.0-RC8

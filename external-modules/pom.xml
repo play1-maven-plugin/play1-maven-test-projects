@@ -53,9 +53,7 @@ limitations under the License.
         <module>postmark</module>
         <module>recaptcha</module>
         <module>redis</module>
-        <module>rythm</module>
         <module>sass</module>
-        <module>scala</module>
         <module>securesocial</module>
         <module>shibboleth</module>
         <module>siena</module>

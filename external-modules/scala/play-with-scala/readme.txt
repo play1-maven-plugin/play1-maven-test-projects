@@ -1,1 +1,0 @@
-Run "mvn clean verify"
