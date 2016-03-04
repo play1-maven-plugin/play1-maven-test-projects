@@ -6,4 +6,11 @@
 
 require:
     - play
-    - dep-module
+    - dep-module 1.0
+
+repositories:    
+    - maven-reactor:
+        type      : local
+        artifact  : ${application.path}/../[module]
+        contains  :
+            - dep-module -> *
