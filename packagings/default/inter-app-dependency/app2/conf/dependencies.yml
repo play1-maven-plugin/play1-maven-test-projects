@@ -1,4 +1,16 @@
 # Application dependencies
+#
+# This file is ignored by Play! 1.1.x and 1.2.x working in Maven context
+#
+# This file with proper 'dep-module' dependency is required by Play! 1.3.x working in Maven context
 
 require:
     - play
+    - app1 1.0
+
+repositories:    
+    - maven-reactor:
+        type      : local
+        artifact  : ${application.path}/../[module]
+        contains  :
+            - app1 -> *
