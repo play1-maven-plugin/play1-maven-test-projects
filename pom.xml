@@ -67,7 +67,7 @@ limitations under the License.
     <properties>
         <release.plugin.version>2.5.3</release.plugin.version>
 
-        <play.plugin.version>1.0.0-beta8-SNAPSHOT</play.plugin.version>
+        <play.plugin.version>1.0.0-beta8</play.plugin.version>
     </properties>
 
     <modules>
