@@ -3,6 +3,8 @@
 # ~~~~
 
 # Home page
+GET     /                                       Application.index
+
 GET     /crud                                   module:crud
 
 # Ignore favicon requests
