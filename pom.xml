@@ -21,7 +21,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin</groupId>
     <artifactId>test-projects</artifactId>
-    <version>1.0.0-beta8-SNAPSHOT</version>
+    <version>1.0.0-beta8</version>
     <packaging>pom</packaging>
 
     <name>Play! Framework Maven Test Projects</name>
@@ -31,7 +31,7 @@ limitations under the License.
         <connection>scm:git:git://github.com/play1-maven-plugin/play1-maven-test-projects.git</connection>
         <developerConnection>scm:git:git@github.com:play1-maven-plugin/play1-maven-test-projects.git</developerConnection>
         <url>https://github.com/play1-maven-plugin/play1-maven-test-projects/tree/${project.scm.tag}</url>
-        <tag>HEAD</tag>
+        <tag>test-projects-1.0.0-beta8</tag>
     </scm>
 
     <ciManagement>

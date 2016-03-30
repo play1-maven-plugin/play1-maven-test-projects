@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.redis</groupId>
     <artifactId>redis-twayis</artifactId>
-    <version>1.0.0-beta8-SNAPSHOT</version>
+    <version>1.0.0-beta8</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Redis : Twayis</name>
@@ -147,4 +147,8 @@ limitations under the License.
         </profile>
     </profiles>
 
+
+  <scm>
+    <tag>test-projects-1.0.0-beta8</tag>
+  </scm>
 </project>
