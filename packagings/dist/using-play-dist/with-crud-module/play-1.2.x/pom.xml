@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.packagings.dist.using-play-dist.with-crud-module</groupId>
     <artifactId>play-1_2_x</artifactId>
-    <version>1.0.0-beta8</version>
+    <version>1.0.0-beta9-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : Packagings : Dist : Using play:dist : With CRUD Module : Play! 1.2.x</name>
@@ -164,9 +164,4 @@ limitations under the License.
             </dependencies>
         </profile>
     </profiles>
-
-
-  <scm>
-    <tag>test-projects-1.0.0-beta8</tag>
-  </scm>
 </project>

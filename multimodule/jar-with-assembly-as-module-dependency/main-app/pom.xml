@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.multimodule.jar-with-assembly-as-module-dependency</groupId>
     <artifactId>main-app</artifactId>
-    <version>1.0.0-beta8</version>
+    <version>1.0.0-beta9-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : MultiModule : Jar with Assembly as Module Dependency : Main Application</name>
@@ -104,9 +104,4 @@ limitations under the License.
             </dependencies>
         </profile>
     </profiles>
-
-
-  <scm>
-    <tag>test-projects-1.0.0-beta8</tag>
-  </scm>
 </project>

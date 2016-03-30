@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.reporting</groupId>
     <artifactId>selenium-with-failures</artifactId>
-    <version>1.0.0-beta8</version>
+    <version>1.0.0-beta9-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : Reporting : Selenium Integration Tests with failures</name>
@@ -123,9 +123,4 @@ limitations under the License.
             </dependencies>
         </profile>
     </profiles>
-
-
-  <scm>
-    <tag>test-projects-1.0.0-beta8</tag>
-  </scm>
 </project>

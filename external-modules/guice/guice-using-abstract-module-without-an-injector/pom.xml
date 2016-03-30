@@ -27,7 +27,7 @@ limitations under the License.
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.google.code.maven-play-plugin.test-projects.external-modules.guice</groupId>
     <artifactId>guice-using-abstract-module-without-an-injector</artifactId>
-    <version>1.0.0-beta8</version>
+    <version>1.0.0-beta9-SNAPSHOT</version>
     <packaging>play</packaging>
 
     <name>Play! Framework Maven Test Projects : External Modules : Guice : Using Abstract Module without an Injector</name>
@@ -117,9 +117,4 @@ limitations under the License.
             </dependencies>
         </profile>
     </profiles>
-
-
-  <scm>
-    <tag>test-projects-1.0.0-beta8</tag>
-  </scm>
 </project>
